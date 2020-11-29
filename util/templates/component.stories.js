@@ -5,8 +5,8 @@ import ${componentName} from "./${componentName}";
 export default {
     title: "${componentName}"
 };
-export const WithBar = () => <${componentName} foo="bar" />;
-export const WithBaz = () => <${componentName} foo="baz" />;
+export const WithBar = () => <${componentName} />;
+export const WithBaz = () => <${componentName} />;
 `,
     extension: `.stories.tsx`
 });
