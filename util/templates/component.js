@@ -6,7 +6,7 @@ import "./${componentName}.scss";
 import { BEM } from "../assets/libs/BEM";
 
 const ${componentName}: React.FC<${componentName}Props> = ({className, style, children}) => {
-    const bem = new BEM(componentName, {});
+    const bem = new BEM("${componentName}", {});
     bem.Append(className);
     return(
         <div style={style} className={bem.toString()} data-testid="${componentName}">{children}</div>

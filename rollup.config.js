@@ -27,32 +27,37 @@ export default {
         commonjs(),
         typescript({useTsconfigDeclarationDir: true}),
         postcss({
-            // extract: true,
+            extract: true,
         }),
         copy({
             targets: [
                 {
-                    src: "src/scss/variables.scss",
+                    src: "src/assets/scss/variables.scss",
                     dest: "build",
                     rename: "variables.scss"
                 },
                 {
-                    src: "src/scss/typography.scss",
+                    src: "src/assets/scss/typography.scss",
                     dest: "build",
                     rename: "typography.scss"
                 },
                 {
-                    src: "src/scss/_functions.scss",
+                    src: "src/assets/scss/_functions.scss",
                     dest: "build",
                     rename: "_functions.scss"
                 },
                 {
-                    src: "src/scss/_helpers.scss",
+                    src: "src/assets/scss/_mixins.scss",
+                    dest: "build",
+                    rename: "_mixins.scss"
+                },
+                {
+                    src: "src/assets/scss/_helpers.scss",
                     dest: "build",
                     rename: "_helpers.scss"
                 },
                 {
-                    src: "src/scss/actions.scss",
+                    src: "src/assets/scss/actions.scss",
                     dest: "build",
                     rename: "actions.scss"
                 }
