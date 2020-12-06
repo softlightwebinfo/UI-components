@@ -1,0 +1,16 @@
+// Generated with util/create-component.js
+@import "../index.scss";
+
+.Wrap {
+  @include font-defaults;
+  border-color: rgb(226, 232, 240);
+  overflow-wrap: break-word;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: calc(-0.25rem);
+  }
+}

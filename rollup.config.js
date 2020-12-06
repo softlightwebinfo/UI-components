@@ -31,36 +31,36 @@ export default {
         }),
         copy({
             targets: [
-                {
-                    src: "src/assets/scss/variables.scss",
-                    dest: "build",
-                    rename: "variables.scss"
-                },
-                {
-                    src: "src/assets/scss/typography.scss",
-                    dest: "build",
-                    rename: "typography.scss"
-                },
-                {
-                    src: "src/assets/scss/_functions.scss",
-                    dest: "build",
-                    rename: "_functions.scss"
-                },
-                {
-                    src: "src/assets/scss/_mixins.scss",
-                    dest: "build",
-                    rename: "_mixins.scss"
-                },
-                {
-                    src: "src/assets/scss/_helpers.scss",
-                    dest: "build",
-                    rename: "_helpers.scss"
-                },
-                {
-                    src: "src/assets/scss/actions.scss",
-                    dest: "build",
-                    rename: "actions.scss"
-                }
+                // {
+                //     src: "src/assets/scss/variables.scss",
+                //     dest: "build",
+                //     rename: "variables.scss"
+                // },
+                // {
+                //     src: "src/assets/scss/typography.scss",
+                //     dest: "build",
+                //     rename: "typography.scss"
+                // },
+                // {
+                //     src: "src/assets/scss/_functions.scss",
+                //     dest: "build",
+                //     rename: "_functions.scss"
+                // },
+                // {
+                //     src: "src/assets/scss/_mixins.scss",
+                //     dest: "build",
+                //     rename: "_mixins.scss"
+                // },
+                // {
+                //     src: "src/assets/scss/_helpers.scss",
+                //     dest: "build",
+                //     rename: "_helpers.scss"
+                // },
+                // {
+                //     src: "src/assets/scss/actions.scss",
+                //     dest: "build",
+                //     rename: "actions.scss"
+                // }
             ]
         })
     ]

@@ -1,0 +1,9 @@
+// Generated with util/create-component.js
+@import "../index.scss";
+.TabSidebar {
+  @include font-defaults;
+  color: $harvey-green;
+  width: 100%;
+  background-color: transparent;
+  justify-content: flex-start;
+}

@@ -1,0 +1,1 @@
+export type TSize = "xxs" | "xs" | "sm" | "md" | "lg" | "xl" | "xxl";

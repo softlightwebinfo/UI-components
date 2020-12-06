@@ -1,0 +1,11 @@
+// Generated with util/create-component.js
+@import "../index.scss";
+
+.AlertText {
+  @include font-defaults;
+  color: $harvey-red;
+  display: flex;
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 400;
+}

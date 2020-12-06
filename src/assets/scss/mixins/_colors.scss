@@ -1,0 +1,21 @@
+@mixin GetColors() {
+  @each $key, $value in $color-array {
+    &--#{$key} {
+      color: map_get($value, "normal");
+      border-color: map_get($value, "normal");
+    }
+  }
+}
+
+@mixin GetColorsBg($isModified) {
+  $modifier: '--';
+  @if ($isModified == false) {
+    $modifier: '-';
+  }
+  @each $key, $value in $color-array {
+    &#{$modifier}#{$key} {
+      background-color: map_get($value, "normal");
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+// Generated with util/create-component.js
+@import "../index.scss";
+
+.WrapItem {
+  @include font-defaults;
+  display: flex;
+  align-items: flex-start;
+  margin: calc(0.25rem);
+}

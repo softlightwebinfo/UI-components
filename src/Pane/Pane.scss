@@ -1,0 +1,12 @@
+// Generated with util/create-component.js
+@import "../index.scss";
+
+.Pane {
+  @include font-defaults;
+  color: $harvey-blue;
+
+  &--flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

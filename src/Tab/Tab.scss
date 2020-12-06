@@ -1,0 +1,31 @@
+// Generated with util/create-component.js
+@import "../index.scss";
+
+.Tab {
+  @include font-defaults;
+  font-weight: 400;
+  border-radius: $border-radius-simple;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  line-height: em(28);
+  margin-left: 4px;
+  margin-right: 4px;
+  background-color: $bg-tab;
+  color: $color-info;
+  padding: 5px 8px;
+  font-size: em(14);
+  @include TransitionDefault();
+  user-select: none;
+  opacity: .3;
+
+  &:hover {
+    background-color: darken($bg-tab, 30%);
+    cursor: pointer;
+  }
+
+  &--selected {
+    opacity: 1;
+  }
+}
