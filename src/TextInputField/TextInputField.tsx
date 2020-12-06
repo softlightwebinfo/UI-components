@@ -3,30 +3,13 @@ import React from "react";
 import { TextInputFieldProps } from "./TextInputField.types";
 import "./TextInputField.scss";
 import { BEM } from "../assets/libs/BEM";
-import { AlertText, Label, SpanTitleText, Typography } from "../index";
+import { Field } from "../index";
 
-const TextInputField: React.FC<TextInputFieldProps> = ({className, style, children, ...props}) => {
+const TextInputField: React.FC<TextInputFieldProps> = ({className, children, ...props}) => {
     const bem = new BEM("TextInputField", {});
     bem.Append(className);
     return (
-        <div style={style} className={bem.toString()}>
-            <Label
-                node={props.required && (
-                    <SpanTitleText title={"This field is required"} text={" *"}/>
-                )}
-            >
-                {props.label}
-            </Label>
-            {props.description && (
-                <Typography
-                    className={bem.Children("description")}
-                    variant={"body2"}
-                    color={"blue-2"}
-                    component={"p"}
-                >
-                    {props.description}
-                </Typography>
-            )}
+        <Field {...props} className={bem.toString()}>
             <input
                 type="text"
                 value={props.value}
@@ -35,9 +18,7 @@ const TextInputField: React.FC<TextInputFieldProps> = ({className, style, childr
                 id={props.id}
                 onChange={props.onChange}
             />
-            {props.hint && <Typography className={bem.Children("hint")} variant={"body2"} color={"blue-2"} component={"p"}>{props.hint}</Typography>}
-            {!props.isValid && <AlertText message={props.validationMessage}/>}
-        </div>
+        </Field>
     )
 };
 export default TextInputField;

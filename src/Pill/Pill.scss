@@ -1,0 +1,16 @@
+// Generated with util/create-component.js
+@import "../index.scss";
+
+.Pill {
+  @include font-defaults;
+  color: $harvey-blue;
+  border-radius: $border-radius-full;
+  font-size: 12px;
+  padding: 2px 6px;
+
+  &--bg {
+    @include GetColorsBg(false);
+  }
+
+  @include GetColors();
+}

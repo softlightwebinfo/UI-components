@@ -4,5 +4,4 @@ import Label from "./Label";
 export default {
     title: "Label"
 };
-export const WithBar = () => <Label />;
-export const WithBaz = () => <Label />;
+export const Default = () => <Label>Test de example</Label>;

@@ -1,0 +1,15 @@
+// Generated with util/create-component.js
+@import "../index.scss";
+
+.Tag {
+  @include font-defaults;
+  color: $harvey-blue;
+  margin-right: 8px;
+  text-transform: initial;
+  font-weight: 400;
+
+  svg {
+    margin-left: em(5);
+    cursor: pointer;
+  }
+}

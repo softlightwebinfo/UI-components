@@ -1,0 +1,25 @@
+// Generated with util/create-component.js
+@import "../index.scss";
+
+.SearchInput {
+  @include font-defaults;
+  color: $harvey-blue;
+  position: relative;
+
+  input {
+    padding-left: 30px;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: gray;
+  }
+}

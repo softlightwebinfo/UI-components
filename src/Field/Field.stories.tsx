@@ -1,23 +1,23 @@
 // Generated with util/create-component.js
 import React from "react";
-import TextInputField from "./TextInputField";
+import TextInputField from "./Field";
+import Field from "./Field";
 
 export default {
-    title: "TextInputField"
+    title: "Field"
 };
 export const Default = () => (
-    <TextInputField
+    <Field
         label={"A required text input field"}
     />
 );
 export const Complete = () => (
-    <TextInputField
+    <Field
         label={"A required text input field"}
         description={"This is a description."}
         required
         isValid={false}
         validationMessage={"This field is required"}
         hint="This is a hint."
-        placeholder={"Text example"}
     />
 );

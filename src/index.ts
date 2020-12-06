@@ -10,8 +10,23 @@ import Square from "./Square/Square";
 import Wrap from "./Wrap/Wrap";
 import WrapItem from "./WrapItem/WrapItem";
 import Avatar from "./Avatar/Avatar";
+import Field from "./Field/Field";
+import TextInputField from "./TextInputField/TextInputField";
+import Label from "./Label/Label";
+import SpanTitleText from "./SpanTitleText/SpanTitleText";
+import Typography from "./Typography/Typography";
+import AlertText from "./AlertText/AlertText";
+import Pane from "./Pane/Pane";
+import TabList from "./TabList/TabList";
+import Tab from "./Tab/Tab";
+import TabContent from "./TabContent/TabContent";
+import TabSidebar from "./TabSidebar/TabSidebar";
+import Pill from "./Pill/Pill";
+import Button from "./Button/Button";
+import Textarea from "./Textarea/Textarea";
 
 export { Badge }
+export { Field }
 export { Divider }
 export { List }
 export { OrderedList }
@@ -23,23 +38,22 @@ export { Square }
 export { Wrap }
 export { WrapItem }
 export { Avatar }
-import TextInputField from "./TextInputField/TextInputField";
-export {TextInputField}
-import Label from "./Label/Label";
-export {Label}
-import SpanTitleText from "./SpanTitleText/SpanTitleText";
-export {SpanTitleText}
-import Typography from "./Typography/Typography";
-export {Typography}
-import AlertText from "./AlertText/AlertText";
-export {AlertText}
-import Pane from "./Pane/Pane";
-export {Pane}
-import TabList from "./TabList/TabList";
-export {TabList}
-import Tab from "./Tab/Tab";
-export {Tab}
-import TabContent from "./TabContent/TabContent";
-export {TabContent}
-import TabSidebar from "./TabSidebar/TabSidebar";
-export {TabSidebar}
+export { TextInputField }
+export { Label }
+export { SpanTitleText }
+export { Typography }
+export { AlertText }
+export { Pane }
+export { TabList }
+export { Tab }
+export { TabContent }
+export { TabSidebar }
+export { Pill }
+export { Button }
+export { Textarea }
+import SearchInput from "./SearchInput/SearchInput";
+export {SearchInput}
+import TagInput from "./TagInput/TagInput";
+export {TagInput}
+import Tag from "./Tag/Tag";
+export {Tag}

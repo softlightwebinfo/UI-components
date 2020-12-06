@@ -2,14 +2,7 @@
 @import "../index.scss";
 
 .TextInputField {
-  @include font-defaults;
-  color: $harvey-green;
-
-  & &__hint {
-    margin-top: 6px;
-  }
-
-  & &__description {
-    margin-bottom: 6px;
+  input {
+    width: 100%;
   }
 }
