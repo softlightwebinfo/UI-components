@@ -9,7 +9,7 @@ import { TTypographyVariant } from "../assets/types/TTypographyVariant";
 
 export interface TypographyProps extends IProps {
     onClick?: (e: any) => void;
-    children: ReactElement | string;
+    children: ReactElement | string | (ReactElement | string)[];
     align?: TAlign;
     color?: TColor;
     display?: TDisplay;

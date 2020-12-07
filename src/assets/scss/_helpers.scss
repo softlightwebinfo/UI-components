@@ -44,3 +44,9 @@ body {
     }
   }
 }
+
+.h-color {
+  &-brand {
+    color: $color-info;
+  }
+}

@@ -4,4 +4,5 @@ import { ReactElement, ReactNode } from "react";
 
 export interface CardProps extends IProps {
     children: ReactElement[] | ReactNode[] | ReactElement | ReactNode;
+    title?: string;
 }

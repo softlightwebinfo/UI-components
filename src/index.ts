@@ -35,6 +35,10 @@ import Card from "./Card/Card";
 import Select from "./Select/Select";
 import Accordion from "./Accordion/Accordion";
 import AccordionSection from "./AccordionSection/AccordionSection";
+import ActivityTimeline from "./ActivityTimeline/ActivityTimeline";
+import TimelineMarker from "./TimelineMarker/TimelineMarker";
+import Breadcrumb from "./Breadcrumb/Breadcrumb";
+import Breadcrumbs from "./Breadcrumbs/Breadcrumbs";
 
 export { Badge }
 export { Field }
@@ -73,3 +77,7 @@ export { Card }
 export { Select }
 export { Accordion }
 export { AccordionSection }
+export { ActivityTimeline }
+export { TimelineMarker }
+export { Breadcrumb }
+export { Breadcrumbs }

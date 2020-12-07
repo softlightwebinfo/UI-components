@@ -11,4 +11,23 @@
   background-clip: padding-box;
   @include Shadow(rgb(215, 217, 226) 0px 1px 2px 0px);
   overflow: hidden;
+
+  &__header {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 0.75rem 1rem 0;
+    margin-bottom: 0.75rem;
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: rgb(63, 73, 84);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+  }
 }

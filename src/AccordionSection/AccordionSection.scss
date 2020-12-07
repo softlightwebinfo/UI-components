@@ -44,6 +44,10 @@
     }
   }
 
+  &__header-icon {
+    margin-right: em(10);
+  }
+
   &:first-child {
     border-top: 0;
   }
@@ -60,6 +64,13 @@
       border-radius: $border-radius-full;
       cursor: pointer;
       @include Shadow(rgb(1, 182, 245) 0px 0px 2px);
+    }
+  }
+
+  &--disabled {
+    #{$then}__summary {
+      color: rgb(215, 217, 226);
+      opacity: .1;
     }
   }
 }
