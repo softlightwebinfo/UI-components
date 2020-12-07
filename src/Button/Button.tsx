@@ -13,11 +13,14 @@ const Button: React.FC<ButtonProps> = (
         variant,
         color,
         colorText,
+        element,
         ...props
     }) => {
     const bem = new BEM("Button", {
         appearance: props.appearance,
-        size: props,
+        // size: props,
+        element,
+        size,
         [color]: variant == "outline" && !!color,
         bg: variant == "solid" && color,
         [variant]: !!variant,

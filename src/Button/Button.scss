@@ -37,6 +37,36 @@
     }
   }
 
+  &--element {
+    -webkit-box-align: center;
+    align-items: center;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: none;
+    cursor: pointer;
+    white-space: normal;
+    user-select: none;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: none;
+    box-sizing: border-box;
+    color: rgb(1, 182, 245);
+    font: inherit inherit inherit inherit inherit inherit inherit inherit;
+    background: border-box transparent;
+    border-radius: 100px;
+    text-decoration: none;
+    padding: 0 1rem;
+    transition: border 0.15s linear 0s;
+    overflow: visible;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(1, 182, 245);
+    border-image: initial;
+    height: 32px;
+  }
+
   &--bg {
     @include GetColorsBg(false, true);
   }

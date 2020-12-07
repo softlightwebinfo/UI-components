@@ -1,7 +1,9 @@
 // Generated with util/create-component.js
 import React from "react";
 import Card from "./Card";
-import { Avatar, Wrap, WrapItem } from "../index";
+import { Avatar, Button, Circle, Wrap, WrapItem } from "../index";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 export default {
     title: "Card"
@@ -30,4 +32,11 @@ export const CardAvatar = () => (
             </WrapItem>
         </Wrap>
     </Card>
+);
+export const WithHeaderAndButton = () => (
+    <Card
+        icon={<Circle size={32}><FontAwesomeIcon icon={faUser}/></Circle>}
+        title={"Contact details"}
+        actions={<Button element onClick={console.log}>New</Button>}
+    />
 );

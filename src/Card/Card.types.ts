@@ -3,6 +3,8 @@ import { IProps } from "../assets/interfaces/IProps";
 import { ReactElement, ReactNode } from "react";
 
 export interface CardProps extends IProps {
-    children: ReactElement[] | ReactNode[] | ReactElement | ReactNode;
+    children?: ReactElement[] | ReactNode[] | ReactElement | ReactNode;
     title?: string;
+    icon?: ReactElement;
+    actions?: ReactElement | ReactElement[];
 }

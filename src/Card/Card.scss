@@ -18,6 +18,7 @@
     justify-content: space-between;
     padding: 0.75rem 1rem 0;
     margin-bottom: 0.75rem;
+    align-items: center;
   }
 
   &__title {
@@ -29,5 +30,9 @@
     white-space: nowrap;
     margin: 0;
     padding: 0;
+  }
+
+  &__icon {
+    margin-right: em(10);
   }
 }

@@ -11,7 +11,8 @@ export interface ButtonProps extends IProps {
     color?: TColor;
     colorText?: TColor;
     variant?: TVariant;
-    onClick(evt: any);
-
+    element?: boolean;
     size?: TSizeHeight;
+
+    onClick(evt: any);
 }
