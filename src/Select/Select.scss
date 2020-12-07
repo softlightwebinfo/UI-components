@@ -1,0 +1,43 @@
+// Generated with util/create-component.js
+@import "../index.scss";
+
+.Select {
+  @include font-defaults;
+  position: relative;
+
+  select {
+    color: $harvey-blue;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    flex: 1;
+    background: none;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+    background-image: -webkit-linear-gradient(to bottom, #FFFFFF, #F4F5F7);
+    background-image: -moz-linear-gradient(to bottom, #FFFFFF, #F4F5F7);
+    background-image: linear-gradient(to bottom, #FFFFFF, #F4F5F7);
+    @include Shadow(inset 0 0 0 1px rgba(67, 90, 111, 0.14), inset 0 -1px 1px 0 rgba(67, 90, 111, 0.06));
+    -webkit-flex: 1;
+    padding-left: em(16);
+    padding-right: em(16);
+    font-size: em(12);
+    border-radius: $border-radius-simple;
+    line-height: em(16);
+    height: 32px;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 8px;
+    height: 12px;
+    width: 12px;
+    margin: auto;
+  }
+}

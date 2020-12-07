@@ -32,6 +32,9 @@ import TextInput from "./TextInput/TextInput";
 import Popover from "./Popover/Popover";
 import OutsideClickDetector from "./OutsideClickDetector/OutsideClickDetector";
 import Card from "./Card/Card";
+import Select from "./Select/Select";
+import Accordion from "./Accordion/Accordion";
+import AccordionSection from "./AccordionSection/AccordionSection";
 
 export { Badge }
 export { Field }
@@ -67,3 +70,6 @@ export { TextInput }
 export { Popover }
 export { OutsideClickDetector }
 export { Card }
+export { Select }
+export { Accordion }
+export { AccordionSection }

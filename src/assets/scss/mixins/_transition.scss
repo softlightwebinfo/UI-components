@@ -8,3 +8,7 @@
 @mixin TransitionDefault() {
   @include Transition(all .3s ease-in-out);
 }
+
+@mixin TransitionDefaultAccordion() {
+  @include Transition(all .5s ease-in-out);
+}

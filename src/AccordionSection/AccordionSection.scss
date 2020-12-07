@@ -1,0 +1,65 @@
+// Generated with util/create-component.js
+@import "../index.scss";
+
+.AccordionSection {
+  $then: &;
+  @include font-defaults;
+  color: $harvey-blue;
+  border-top: 1px solid rgb(215, 217, 226);
+  list-style: none;
+  box-sizing: border-box;
+
+  &__summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: em(15) em(16);
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__content {
+    font-size: em(15);
+    font-weight: 500;
+    line-height: 1.57;
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    @include TransitionDefaultAccordion;
+  }
+
+  & &__icon {
+    @include TransitionDefault;
+    color: $color-info;
+    width: em(18);
+    height: em(18);
+
+    &:hover,
+    &:focus {
+      border-radius: $border-radius-full;
+      cursor: pointer;
+      @include Shadow(rgb(1, 182, 245) 0px 0px 2px);
+    }
+  }
+
+  &:first-child {
+    border-top: 0;
+  }
+
+  &--open {
+    #{$then}__content {
+      padding-left: em(16);
+      padding-right: em(32);
+      padding-bottom: em(15);
+      height: auto;
+    }
+
+    #{$then}__icon {
+      border-radius: $border-radius-full;
+      cursor: pointer;
+      @include Shadow(rgb(1, 182, 245) 0px 0px 2px);
+    }
+  }
+}
