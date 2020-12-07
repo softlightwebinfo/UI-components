@@ -24,6 +24,14 @@ import TabSidebar from "./TabSidebar/TabSidebar";
 import Pill from "./Pill/Pill";
 import Button from "./Button/Button";
 import Textarea from "./Textarea/Textarea";
+import SearchInput from "./SearchInput/SearchInput";
+import TagInput from "./TagInput/TagInput";
+import Tag from "./Tag/Tag";
+import Autocomplete from "./Autocomplete/Autocomplete";
+import TextInput from "./TextInput/TextInput";
+import Popover from "./Popover/Popover";
+import OutsideClickDetector from "./OutsideClickDetector/OutsideClickDetector";
+import Card from "./Card/Card";
 
 export { Badge }
 export { Field }
@@ -51,9 +59,11 @@ export { TabSidebar }
 export { Pill }
 export { Button }
 export { Textarea }
-import SearchInput from "./SearchInput/SearchInput";
-export {SearchInput}
-import TagInput from "./TagInput/TagInput";
-export {TagInput}
-import Tag from "./Tag/Tag";
-export {Tag}
+export { SearchInput }
+export { TagInput }
+export { Tag }
+export { Autocomplete }
+export { TextInput }
+export { Popover }
+export { OutsideClickDetector }
+export { Card }

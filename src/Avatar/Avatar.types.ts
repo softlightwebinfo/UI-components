@@ -5,5 +5,5 @@ import { TSize } from "../assets/types/TSize";
 export interface AvatarProps extends IProps {
     name: string;
     src: string;
-    size: TSize;
+    size?: TSize;
 }

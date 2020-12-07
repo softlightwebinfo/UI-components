@@ -1,0 +1,37 @@
+// Generated with util/create-component.js
+@import "../index.scss";
+
+.Autocomplete {
+  @include font-defaults;
+  color: $harvey-blue;
+  $borderBottom: 1px solid rgb(237, 240, 242);
+  $bgActive: rgba(16, 112, 202, 0.04);
+
+  & &__menu {
+    margin-top: em(2);
+    font-size: em(13);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+
+    header {
+      user-select: none;
+      padding: em(8);
+      border-bottom: $borderBottom;
+      text-transform: uppercase;
+    }
+  }
+
+  &__item {
+    border-bottom: $borderBottom;
+    padding: em(8);
+
+    &:hover {
+      background-color: $bgActive;
+      cursor: pointer;
+    }
+  }
+
+  &__no-results {
+    padding: 8px;
+  }
+}
