@@ -4,10 +4,12 @@ import { TextInputFieldProps } from "./TextInputField.types";
 import "./TextInputField.scss";
 import { BEM } from "../assets/libs/BEM";
 import { Field } from "../index";
+import { formFieldHooks } from "../assets/hooks/FormField";
 
 const TextInputField: React.FC<TextInputFieldProps> = ({className, children, ...props}) => {
     const bem = new BEM("TextInputField", {});
     bem.Append(className);
+    const {onChange} = formFieldHooks({id: props.id, onChange: props.onChange, value: props.value});
     return (
         <Field {...props} className={bem.toString()}>
             <input
@@ -16,7 +18,7 @@ const TextInputField: React.FC<TextInputFieldProps> = ({className, children, ...
                 placeholder={props.placeholder}
                 required={props.required}
                 id={props.id}
-                onChange={props.onChange}
+                onChange={onChange}
             />
         </Field>
     )

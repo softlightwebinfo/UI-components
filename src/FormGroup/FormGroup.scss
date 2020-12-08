@@ -1,0 +1,7 @@
+// Generated with util/create-component.js
+@import "../index.scss";
+.FormGroup {
+  @include font-defaults;
+  color: $harvey-blue;
+  margin-bottom: $margin-bottom;
+}

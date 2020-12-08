@@ -9,6 +9,8 @@ export interface FieldProps extends IProps {
     hint?: ReactElement | string;
     validationMessage?: ReactElement | string;
     isValid?: boolean;
+    rounded?: boolean;
+    formGroup?: boolean;
 
     onChange?(evt);
 }

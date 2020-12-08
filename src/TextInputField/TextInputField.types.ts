@@ -1,8 +1,9 @@
 // Generated with util/create-component.js
 import { IProps } from "../assets/interfaces/IProps";
 import { ReactElement } from "react";
+import { FieldProps } from "../Field/Field.types";
 
-export interface TextInputFieldProps extends IProps {
+export interface TextInputFieldProps extends IProps, FieldProps {
     label: string;
     required?: boolean;
     description?: string;

@@ -18,7 +18,10 @@
       color: white;
       background-image: none;
       @if ($isHover) {
-        background-color: map_get($value, "hover");
+        &:hover {
+          background-image: none;
+          background-color: map_get($value, "hover");
+        }
       }
     }
   }

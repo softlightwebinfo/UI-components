@@ -13,4 +13,14 @@
     margin-bottom: 6px;
     font-size: em(13);
   }
+
+  &--rounded {
+    input {
+      border-radius: 12em;
+    }
+
+    textarea {
+      border-radius: em(15);
+    }
+  }
 }

@@ -3,13 +3,16 @@ import React from "react";
 import { FieldProps } from "./Field.types";
 import "./Field.scss";
 import { BEM } from "../assets/libs/BEM";
-import { AlertText, Label, SpanTitleText, Typography } from "../index";
+import { AlertText, FormGroup, Label, SpanTitleText, Typography } from "../index";
 
 const Field: React.FC<FieldProps> = ({className, style, children, ...props}) => {
-    const bem = new BEM("Field", {});
+    const bem = new BEM("Field", {
+        rounded: props.rounded,
+    });
     bem.Append(className);
+    const Component = props.formGroup ? FormGroup : "div";
     return (
-        <div style={style} className={bem.toString()}>
+        <Component style={style} className={bem.toString()}>
             {props.label && (
                 <Label
                     node={props.required && (
@@ -41,7 +44,7 @@ const Field: React.FC<FieldProps> = ({className, style, children, ...props}) => 
                 </Typography>
             )}
             {!props.isValid && props.isValid != undefined && <AlertText message={props.validationMessage}/>}
-        </div>
+        </Component>
     )
 };
 export default Field;
