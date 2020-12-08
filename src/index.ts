@@ -97,3 +97,5 @@ import FormGroup from "./FormGroup/FormGroup";
 export {FormGroup}
 import Pagination from "./Pagination/Pagination";
 export {Pagination}
+import AvatarGroup from "./AvatarGroup/AvatarGroup";
+export {AvatarGroup}

@@ -11,6 +11,7 @@ const Avatar: React.FC<AvatarProps> = (
         name,
         src,
         style,
+        title,
         children
     }) => {
     const bem = new BEM("Avatar", {
@@ -19,10 +20,12 @@ const Avatar: React.FC<AvatarProps> = (
     bem.Append(className);
     return (
         <span
+            title={title}
             style={style}
             className={bem.toString()}
         >
-            <img loading={"lazy"} className={bem.Children("img")} src={src} title={name} alt={name}/>
+            {!src && <span>{name}</span>}
+            {src && <img loading={"lazy"} className={bem.Children("img")} src={src} title={name} alt={name}/>}
         </span>
     )
 };
