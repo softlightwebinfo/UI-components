@@ -1,0 +1,128 @@
+// Generated with util/create-component.js
+@import "../index.scss";
+
+.Pagination {
+  @include font-defaults;
+  color: $harvey-blue;
+  margin: auto;
+  display: block;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  a {
+    font-style: inherit;
+    font-variant: inherit;
+    font-stretch: inherit;
+    font-family: inherit;
+    padding: 0;
+    transition: color 0.1s linear 0s;
+    cursor: pointer;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 12rem;
+    font-weight: bold;
+    font-size: em(12);
+    line-height: 0;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border: 1px solid rgb(215, 217, 226);
+    outline: none;
+    margin: 0;
+    overflow: visible;
+    text-transform: none;
+    box-sizing: border-box;
+    z-index: 0;
+    background-color: white;
+    pointer-events: none;
+    color: rgb(63, 73, 84);
+    text-decoration: none;
+    @include TransitionDefault;
+    user-select: none;
+  }
+
+  li.active a {
+    background-color: #dcdee2;
+  }
+
+  li > a {
+    border-radius: 0;
+    margin-left: -1px;
+  }
+
+  li:nth-child(2) > a {
+    margin-left: 0.5rem;
+    border-radius: 100px 0 0 100px;
+  }
+
+  li:nth-last-child(2) > a {
+    margin-right: 0.5rem;
+    border-radius: 0px 100px 100px 0px;
+  }
+
+  li:first-child,
+  li:last-child {
+    a, span {
+      font-style: inherit;
+      font-variant: inherit;
+      font-stretch: inherit;
+      font-family: inherit;
+      padding: 0px;
+      transition: color 0.1s linear 0s;
+      cursor: pointer;
+      height: 2rem;
+      width: 2rem;
+      border-radius: 12rem;
+      font-weight: bold;
+      font-size: 0.875rem;
+      line-height: 0;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+      background-color: rgb(255, 255, 255);
+      border: 1px solid rgb(215, 217, 226);
+      outline: none;
+      margin: 0px;
+      overflow: visible;
+      text-transform: none;
+      box-sizing: border-box;
+      color: rgb(63, 73, 84);
+      z-index: 0;
+    }
+  }
+
+  li:hover {
+    cursor: pointer;
+
+    a {
+      background-color: #dcdee2;
+    }
+  }
+
+  li.disable {
+    opacity: .2;
+    cursor: initial;
+
+    a {
+      background-color: white;
+    }
+
+    a:hover {
+      background-color: white;
+    }
+  }
+}

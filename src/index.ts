@@ -95,3 +95,5 @@ import Form from "./Form/Form";
 export {Form}
 import FormGroup from "./FormGroup/FormGroup";
 export {FormGroup}
+import Pagination from "./Pagination/Pagination";
+export {Pagination}
