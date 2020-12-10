@@ -99,3 +99,5 @@ import Pagination from "./Pagination/Pagination";
 export {Pagination}
 import AvatarGroup from "./AvatarGroup/AvatarGroup";
 export {AvatarGroup}
+import Drawer from "./Drawer/Drawer";
+export {Drawer}

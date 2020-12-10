@@ -33,3 +33,71 @@
 @-o-keyframes slide-up-in {
   @include ASlideUp;
 }
+
+@mixin AnDrawerSlideRightIn {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes drawer-slide-right-in {
+  @include AnDrawerSlideRightIn;
+}
+
+@-moz-keyframes drawer-slide-right-in {
+  @include AnDrawerSlideRightIn;
+}
+
+@-khtml-keyframes drawer-slide-right-in {
+  @include AnDrawerSlideRightIn;
+}
+
+@-ms-keyframes drawer-slide-right-in {
+  @include AnDrawerSlideRightIn;
+}
+
+@-webkit-keyframes drawer-slide-right-in {
+  @include AnDrawerSlideRightIn;
+}
+
+@-o-keyframes drawer-slide-right-in {
+  @include AnDrawerSlideRightIn;
+}
+
+@mixin AnDrawerSlideRightOut {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes drawer-slide-right-out {
+  @include AnDrawerSlideRightOut;
+}
+
+@-moz-keyframes drawer-slide-right-out {
+  @include AnDrawerSlideRightOut;
+}
+
+@-khtml-keyframes drawer-slide-right-out {
+  @include AnDrawerSlideRightOut;
+}
+
+@-ms-keyframes drawer-slide-right-out {
+  @include AnDrawerSlideRightOut;
+}
+
+@-webkit-keyframes drawer-slide-right-out {
+  @include AnDrawerSlideRightOut;
+}
+
+@-o-keyframes drawer-slide-right-out {
+  @include AnDrawerSlideRightOut;
+}
