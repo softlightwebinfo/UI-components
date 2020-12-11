@@ -3,4 +3,5 @@ import { IProps } from "../../interfaces/IProps";
 
 export interface FlexProps extends IProps {
     "space-between"?: boolean;
+    spacing?: boolean;
 }

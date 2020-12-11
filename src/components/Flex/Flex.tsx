@@ -4,9 +4,9 @@ import { FlexProps } from "./Flex.types";
 import "./Flex.scss";
 import { BEM } from "../../libs/BEM";
 
-const Flex: React.FC<FlexProps> = ({className, style, children, ...props}) => {
+const Flex: React.FC<FlexProps> = ({className, spacing, style, children, ...props}) => {
     const bem = new BEM("Flex", {
-
+        spacing: !!spacing,
     });
     bem.Append(className);
     return (

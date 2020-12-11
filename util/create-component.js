@@ -4,14 +4,14 @@ const templates = require("./templates");
 const importIndex = require("./templates/import.index");
 
 const componentName = process.argv[2];
-
+const componentDir = process.argv[3] || "components";
 if (!componentName) {
     console.error("Please supply a valid component name".red);
     process.exit(1);
 }
 
 console.log("Creating Component Templates with name: " + componentName);
-const directory = './src/components/';
+const directory = `./src/${componentDir}/`;
 const componentDirectory = `${directory}${componentName}`;
 
 if (fs.existsSync(componentDirectory)) {

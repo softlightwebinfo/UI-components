@@ -7,7 +7,7 @@
   }
 }
 
-@mixin GetColorsBg($isModified, $isHover: false) {
+@mixin GetColorsBg($isModified:'', $isHover: false) {
   $modifier: '--';
   @if ($isModified == false) {
     $modifier: '-';

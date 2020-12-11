@@ -1,0 +1,11 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+
+.Alert {
+  @include font-defaults;
+  padding: 10px 20px;
+  background-color: $color-success;;
+  color: white;
+  border-radius: $border-radius-simple;
+  @include GetColorsBg();
+}

@@ -53,6 +53,11 @@ import CardFeature from "./CardFeature/CardFeature";
 import Faq from "./Faq/Faq";
 import FaqList from "./FaqList/FaqList";
 import Terms from "./Terms/Terms";
+import Progress from "./Progress/Progress";
+import ProgressLabel from "./ProgressLabel/ProgressLabel";
+import MiniStatWid from "./MiniStatWid/MiniStatWid";
+import Alert from "./Alert/Alert";
+import AlertPro from "./AlertPro/AlertPro";
 
 export { Badge }
 export { Field }
@@ -109,7 +114,8 @@ export { CardFeature }
 export { Faq }
 export { FaqList }
 export { Terms }
-import Progress from "./Progress/Progress";
-export {Progress}
-import ProgressLabel from "./ProgressLabel/ProgressLabel";
-export {ProgressLabel}
+export { Progress }
+export { ProgressLabel }
+export { MiniStatWid }
+export { Alert }
+export { AlertPro }

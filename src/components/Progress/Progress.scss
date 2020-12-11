@@ -27,5 +27,16 @@
     -webkit-transition: width .6s ease;
     transition: width .6s ease;
     background-color: #008ecc;
+    width: 100%;
+  }
+
+  &--position {
+    &-vertical {
+      width: 10px;
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
   }
 }

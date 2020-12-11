@@ -7,4 +7,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: em(-5);
+
+  &--spacing {
+    > * {
+      margin: em(5);
+    }
+  }
 }

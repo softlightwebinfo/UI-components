@@ -4,16 +4,23 @@ import { ProgressProps } from "./Progress.types";
 import "./Progress.scss";
 import { BEM } from "../../libs/BEM";
 
-const Progress: React.FC<ProgressProps> = ({className, value, style, children}) => {
-    const bem = new BEM("Progress", {});
-    bem.Append(className);
-    return (
-        <div
-            style={style}
-            className={bem.toString()}
-        >
-            <div style={{width: `${value}%`}} className={bem.Children("bar")}/>
-        </div>
-    )
-};
+const Progress: React.FC<ProgressProps> = (
+    {
+        className, color, position, value, style, children
+    }) => {
+        const bem = new BEM("Progress", {
+            position: position,
+        });
+        bem.Append(className);
+        const property = position == "vertical" ? "height" : "width";
+        return (
+            <div
+                style={style}
+                className={bem.toString()}
+            >
+                <div style={{[property]: `${value}%`, backgroundColor: color}} className={bem.Children("bar")}/>
+            </div>
+        )
+    }
+;
 export default Progress;
