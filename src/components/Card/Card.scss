@@ -1,0 +1,53 @@
+// Generated with util/create-component.js
+@import "src/index";
+
+.Card {
+  $then: &;
+  @include font-defaults;
+  color: $harvey-blue;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  border: 0.0625rem solid rgb(215, 217, 226);
+  border-radius: 0.875rem;
+  background-clip: padding-box;
+  @include Shadow(rgb(215, 217, 226) 0px 1px 2px 0px);
+  overflow: hidden;
+
+  &__header {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 0.75rem 1rem 0;
+    margin-bottom: 0.75rem;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: rgb(63, 73, 84);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__icon {
+    margin-right: em(10);
+  }
+
+  &__body {
+    padding: em(20);
+  }
+
+  &--multipleBody {
+    #{$then}__body {
+      border-top: 1px solid rgba(234, 238, 251, 0.8);
+
+      &:first-child {
+        border-top: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+// Generated with util/create-component.js
+@import "src/index";
+
+.OrderedList {
+  @include font-defaults;
+  color: $harvey-green;
+  @extend %List;
+}

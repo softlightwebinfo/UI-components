@@ -3,7 +3,7 @@ module.exports = (componentName) => ({
 import React from "react";
 import {${componentName}Props} from "./${componentName}.types";
 import "./${componentName}.scss";
-import { BEM } from "../assets/libs/BEM";
+import { BEM } from "../../libs/BEM";
 
 const ${componentName}: React.FC<${componentName}Props> = ({className, style, children}) => {
     const bem = new BEM("${componentName}", {});

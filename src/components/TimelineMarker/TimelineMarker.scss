@@ -1,0 +1,59 @@
+// Generated with util/create-component.js
+@import "src/index";
+
+.TimelineMarker {
+  @include font-defaults;
+  color: $harvey-blue;
+  display: flex;
+
+  &__left {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+
+    &:before {
+      content: "";
+      background-color: rgb(239, 241, 245);
+      height: 100%;
+      width: 1px;
+      position: absolute;
+      right: 50%;
+      left: 50%;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    z-index: 1;
+    min-width: 2rem;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__right {
+    margin: 0 0 em(16) em(16);
+    width: 100%;
+  }
+
+  &__section {
+    padding: 0.5rem 0px;
+    margin: 0px;
+  }
+
+  &__description {
+    color: rgb(63, 73, 84);
+  }
+
+  &__children {
+    margin: em(8) 0;
+  }
+}

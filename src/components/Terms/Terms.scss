@@ -1,0 +1,11 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+
+.Terms {
+  @include font-defaults;
+  color: $harvey-green;
+
+  > .Card {
+    margin-bottom: $margin-bottom;
+  }
+}

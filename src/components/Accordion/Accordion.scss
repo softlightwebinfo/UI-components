@@ -1,0 +1,11 @@
+// Generated with util/create-component.js
+@import "src/index";
+
+.Accordion {
+  @include font-defaults;
+  color: $harvey-blue;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
