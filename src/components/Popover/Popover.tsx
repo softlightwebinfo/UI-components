@@ -27,7 +27,7 @@ const Popover: React.FC<PopoverProps> = (
     return (
         <OutsideClickDetector onOutsideClick={onClose}>
             <div style={style} className={bem.toString()}>
-                <div className={bem.Children("trigger")} onFocus={onFocus}>
+                <div className={bem.Children("trigger")} onClick={onFocus} onFocus={onFocus}>
                     {props.trigger}
                     {showClose && (
                         <FontAwesomeIcon

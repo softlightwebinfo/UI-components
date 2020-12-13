@@ -1,0 +1,42 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+
+.SearchDropdown {
+  @include font-defaults;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  width: 100%;
+  flex: 1;
+  max-width: em(470);
+
+  &__search {
+    width: em(350);
+    position: relative;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    flex: 1;
+  }
+
+  &__dropdown {
+    @extend %FieldDark;
+    height: inherit;
+    min-width: rem(120);
+    box-sizing: border-box;
+    margin: 0;
+    font-size: em(14);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding: 0 11px;
+    flex: initial;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}

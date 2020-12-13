@@ -5,6 +5,7 @@
   @include font-defaults;
   color: $harvey-blue;
   position: relative;
+  $then: &;
 
   input {
     padding-left: 30px;
@@ -21,5 +22,13 @@
     align-items: center;
     font-size: 14px;
     color: gray;
+  }
+
+  &--dark {
+    @extend %FieldDark;
+
+    #{$then}__icon {
+      color: white;
+    }
   }
 }

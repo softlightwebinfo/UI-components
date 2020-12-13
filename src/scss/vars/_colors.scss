@@ -31,7 +31,7 @@ $color-info_hover: rgb(100, 141, 174);
 $color-disabled: rgba(255, 255, 255, 0.12);
 $color-disabled-2: rgba(0, 0, 0, 0.12);
 
-$color-orange: #ff9b44;
+$color-orange: #fa8c15;
 $color-orange_hover: #ff851a;
 
 $color-gray: gray;
@@ -39,6 +39,11 @@ $color-gray_hover: gray;
 
 $color-mix-purple: linear-gradient(to right, #667eea 0%, #764ba2 100%);
 $color-mix-purple_hover: linear-gradient(to right, #667eea 0%, #764ba2 100%);
+
+$color-darken: #1a202e;
+$color-darken-gray: #97a6ba;
+$color-darken-blue: #003366;
+$color-hover: ghostwhite;
 
 $color-array: (
         default:(

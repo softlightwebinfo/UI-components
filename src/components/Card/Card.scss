@@ -3,15 +3,7 @@
 
 .Card {
   $then: &;
-  @include font-defaults;
-  color: $harvey-blue;
-  position: relative;
-  background-color: rgb(255, 255, 255);
-  border: 0.0625rem solid rgb(215, 217, 226);
-  border-radius: 0.875rem;
-  background-clip: padding-box;
-  @include Shadow(rgb(215, 217, 226) 0px 1px 2px 0px);
-  overflow: hidden;
+  @extend %Card;
 
   &__header {
     display: flex;

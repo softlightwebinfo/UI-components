@@ -58,6 +58,15 @@ import ProgressLabel from "./ProgressLabel/ProgressLabel";
 import MiniStatWid from "./MiniStatWid/MiniStatWid";
 import Alert from "./Alert/Alert";
 import AlertPro from "./AlertPro/AlertPro";
+import Navbar from "./Navbar/Navbar";
+import Aside from "./Aside/Aside";
+import AsideHeader from "./AsideHeader/AsideHeader";
+import AvatarUser from "./AvatarUser/AvatarUser";
+import HeaderHorizontal from "./HeaderHorizontal/HeaderHorizontal";
+import Container from "./Container/Container";
+import HeaderHorizontalMain from "./HeaderHorizontalMain/HeaderHorizontalMain";
+import HeaderHorizontalNav from "./HeaderHorizontalNav/HeaderHorizontalNav";
+import Logo from "./Logo/Logo";
 
 export { Badge }
 export { Field }
@@ -119,3 +128,20 @@ export { ProgressLabel }
 export { MiniStatWid }
 export { Alert }
 export { AlertPro }
+export { Navbar }
+export { Aside }
+export { AsideHeader }
+export { AvatarUser }
+export { HeaderHorizontal }
+export { Container }
+export { HeaderHorizontalMain }
+export { HeaderHorizontalNav }
+export { Logo }
+import Dropdown from "./Dropdown/Dropdown";
+export {Dropdown}
+import LogoSearchDropdown from "./LogoSearchDropdown/LogoSearchDropdown";
+export {LogoSearchDropdown}
+import SearchDropdown from "./SearchDropdown/SearchDropdown";
+export {SearchDropdown}
+import Menu from "./Menu/Menu";
+export {Menu}

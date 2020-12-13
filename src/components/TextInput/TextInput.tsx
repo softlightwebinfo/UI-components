@@ -9,6 +9,8 @@ const TextInput: React.FC<TextInputProps> = ({className, style, children, ...pro
     bem.Append(className);
     return (
         <input
+            type={props.type}
+            required={props.required}
             style={style}
             className={bem.toString()}
             value={props.value}

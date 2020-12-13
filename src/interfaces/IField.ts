@@ -1,6 +1,8 @@
 export interface IField {
     placeholder?: string;
     value?: string;
+    required?: boolean;
+    dark?: boolean;
 
     onChange?(e: any);
 

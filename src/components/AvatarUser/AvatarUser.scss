@@ -1,0 +1,29 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+
+.AvatarUser {
+  @include font-defaults;
+  color: $harvey-blue;
+  padding: em(20);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__avatar {
+    &.Avatar {
+      $w: 96px;
+      width: $w;
+      height: $w;
+      margin: auto auto em(24);
+    }
+  }
+
+  &__name {
+    color: white;
+    margin-bottom: em(5);
+  }
+
+  &__subTitle {
+    color: $color-darken-gray;
+  }
+}

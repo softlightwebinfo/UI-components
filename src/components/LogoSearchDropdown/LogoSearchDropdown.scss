@@ -1,0 +1,14 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+
+.LogoSearchDropdown {
+  @include font-defaults;
+  display: flex;
+  align-items: center;
+  color: white;
+  width: 100%;
+  flex: 1;
+  &__logo {
+    margin-right: em(32);
+  }
+}
