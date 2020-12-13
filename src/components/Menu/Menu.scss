@@ -7,7 +7,7 @@
   color: $harvey-blue;
   $then: &;
 
-  &:not([#{$key}]) {
+  &:not([#{$key}]):not(&--icons)  {
     box-sizing: border-box;
     font-variant: tabular-nums;
     font-feature-settings: 'tnum';

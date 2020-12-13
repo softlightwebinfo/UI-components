@@ -12,9 +12,13 @@ const Menu: React.FC<MenuProps> = (
         active,
         menu,
         style,
-        routeKey
+        routeKey,
+        onClick,
+        icons,
     }) => {
-    const bem = new BEM("Menu", {});
+    const bem = new BEM("Menu", {
+        icons: icons,
+    });
     bem.Append(className);
     const split = active.split("/");
     return (
@@ -25,12 +29,12 @@ const Menu: React.FC<MenuProps> = (
         >
             {Object.entries(menu).map(([key, value], index) => {
                 return (
-                    <li className={bem.Modifier("item", "active", split.includes(key))}>
-                        <span>
+                    <li key={key} className={bem.Modifier("item", "active", split.includes(key))}>
+                        <span onClick={() => onClick && onClick(key, value, index)}>
                             {value.label}
                             {value.menu && (<FontAwesomeIcon icon={faChevronDown}/>)}
                         </span>
-                        {value.menu && <Menu routeKey={key} active={active} menu={value.menu}/>}
+                        {value.menu && <Menu onClick={onClick} routeKey={key} active={active} menu={value.menu}/>}
                     </li>
                 )
             })}

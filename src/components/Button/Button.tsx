@@ -22,7 +22,7 @@ const Button: React.FC<ButtonProps> = (
         // size: props,
         icon: !!hasIcon,
         element,
-        size,
+        size: size.toString(),
         [color]: variant == "outline" && !!color,
         bg: variant == "solid" && color,
         [variant]: !!variant,

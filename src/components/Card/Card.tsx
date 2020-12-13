@@ -13,10 +13,12 @@ const Card: React.FC<CardProps> = (
         style,
         children,
         multipleBody = [],
+        dark,
         ...props
     }) => {
         const bem = new BEM("Card", {
             multipleBody: !!multipleBody,
+            dark: !!multipleBody,
         });
         bem.Append(className);
         return (

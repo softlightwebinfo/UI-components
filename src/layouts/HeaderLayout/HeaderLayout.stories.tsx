@@ -2,8 +2,10 @@
 import React, { useState } from "react";
 import HeaderLayout from "./HeaderLayout";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFire } from "@fortawesome/free-solid-svg-icons";
+import { faBoxes, faCog, faFire, faList } from "@fortawesome/free-solid-svg-icons";
 import { DropdownPropsData } from "../../components/Dropdown/Dropdown.types";
+import { MenuPropsMenuItem } from "../../components/Menu/Menu.types";
+import { Button } from "../..";
 
 export default {
     title: "Layouts/HeaderLayout"
@@ -55,6 +57,9 @@ export const Default = () => {
             headerNav={{
                 rowsLeft: {
                     active: "main/dashboard/crypto",
+                    onClick(key: string, value: MenuPropsMenuItem, index: number) {
+                        console.log(key, value, index);
+                    },
                     menu: {
                         "main": {
                             label: "Main",
@@ -147,7 +152,21 @@ export const Default = () => {
                 },
                 rowsRight: {
                     active: "",
-                    menu: {}
+                    icons: true,
+                    onClick(key: string, value: MenuPropsMenuItem, index: number) {
+                        console.log("right", key, value, index);
+                    },
+                    menu: {
+                        "list": {
+                            label: <Button hasIcon><FontAwesomeIcon icon={faList}/></Button>
+                        },
+                        "setting": {
+                            label: <Button hasIcon><FontAwesomeIcon icon={faCog}/></Button>
+                        },
+                        "app": {
+                            label: <Button hasIcon><FontAwesomeIcon icon={faBoxes}/></Button>
+                        }
+                    }
                 },
             }}
         />

@@ -15,7 +15,7 @@ const HeaderHorizontalNav: React.FC<HeaderHorizontalNavProps> = ({className, row
         >
             <Container>
                 <nav className={bem.Children("nav")}>
-                    <Menu {...rowsLeft}/>
+                    <Menu {...rowsLeft} className={bem.Children("left")}/>
                     <Menu {...rowsRight}/>
                 </nav>
             </Container>
