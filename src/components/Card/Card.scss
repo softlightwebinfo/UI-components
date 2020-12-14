@@ -46,4 +46,8 @@
   &--dark {
     @include PlaceholderDark;
   }
+
+  &--gradient {
+    @include Gradient();
+  }
 }

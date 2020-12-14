@@ -26,3 +26,12 @@
     }
   }
 }
+
+@mixin Gradient() {
+  background-color: #872776;
+  background: -webkit-gradient(linear, left top, right top, from(#872776), to(#352883));
+  background: -webkit-linear-gradient(left, #872776, #352883);
+  background: -moz-linear-gradient(left, #872776, #352883);
+  background: -ms-linear-gradient(left, #872776, #352883);
+  background: -o-linear-gradient(left, #872776, #352883);
+}

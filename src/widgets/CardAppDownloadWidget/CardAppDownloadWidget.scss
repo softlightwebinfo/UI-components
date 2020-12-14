@@ -1,0 +1,41 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+
+.CardAppDownloadWidget {
+  @include font-defaults;
+  color: $harvey-blue;
+  width: 100%;
+
+  &__title {
+    margin-bottom: em(20);
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  &__right {
+    a {
+      display: block;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+      border: 0;
+    }
+
+    a + a {
+      margin-top: em(10);
+    }
+  }
+
+  .Card__body {
+    display: flex;
+    justify-content: space-between;
+  }
+}

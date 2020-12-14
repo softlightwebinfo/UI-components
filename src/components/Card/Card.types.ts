@@ -9,5 +9,6 @@ export interface CardProps extends IProps {
     actions?: ReactElement | ReactElement[];
     isBody?: boolean;
     dark?: boolean;
+    gradient?: boolean;
     multipleBody?: ReactElement[];
 }

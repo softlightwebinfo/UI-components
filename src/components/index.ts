@@ -145,3 +145,5 @@ import SearchDropdown from "./SearchDropdown/SearchDropdown";
 export {SearchDropdown}
 import Menu from "./Menu/Menu";
 export {Menu}
+import IconSvg from "./IconSvg/IconSvg";
+export {IconSvg}
