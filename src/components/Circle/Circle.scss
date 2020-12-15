@@ -1,0 +1,18 @@
+// Generated with util/create-component.js
+@import "src/index";
+
+.Circle {
+  @include font-defaults;
+  display: inline-flex;
+  font-size: em(15);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: tomato;
+  color: $color-white;
+
+  svg {
+    font-size: em(12);
+  }
+}

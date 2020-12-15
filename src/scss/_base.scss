@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+img {
+  border: 0;
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+input,
+textarea {
+  border-radius: 3px;
+  width: 100%;
+  color: $harvey-blue;
+  font-weight: 400;
+  font-size: 12px;
+  height: 32px;
+  padding: 1px 10px;
+  line-height: 16px;
+  border: none;
+  appearance: none;
+  @include Shadow(rgba(67, 90, 111, 0.3) 0px 0px 0px 1px inset, rgba(67, 90, 111, 0.14) 0px 1px 2px inset);
+
+  &:focus {
+    z-index: 2;
+    outline: none;
+    @include Shadow(rgba(67, 90, 111, 0.14) 0px 0px 2px inset, rgb(87, 154, 217) 0px 0px 0px 1px inset, rgba(16, 112, 202, 0.14) 0px 0px 0px 3px);
+  }
+}

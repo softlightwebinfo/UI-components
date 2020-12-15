@@ -1,0 +1,43 @@
+// Generated with util/create-component.js
+@import "src/index";
+
+.Popover {
+  $then: &;
+  @include font-defaults;
+  color: $harvey-green;
+  position: relative;
+
+  &__trigger {
+
+  }
+
+  &__menu {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 0;
+    overflow: hidden;
+    @include TransitionDefault;
+    max-height: 400px;
+  }
+
+  &__close {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 12px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &--open {
+    #{$then}__menu {
+      height: auto;
+      overflow: auto;
+    }
+  }
+}

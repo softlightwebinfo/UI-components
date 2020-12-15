@@ -1,0 +1,14 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+
+.MiniStatWid {
+  @include font-defaults;
+  color: $harvey-blue;
+  width: 100%;
+
+  .Card__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

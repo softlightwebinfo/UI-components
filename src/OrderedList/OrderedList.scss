@@ -1,8 +1,0 @@
-// Generated with util/create-component.js
-@import "../index.scss";
-
-.OrderedList {
-  @include font-defaults;
-  color: $harvey-green;
-  @extend %List;
-}

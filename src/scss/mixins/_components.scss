@@ -1,0 +1,28 @@
+@mixin Paper() {
+  color: #fff;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: #424242;
+}
+
+@mixin FormGroup() {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  &--row {
+    flex-direction: row;
+  }
+}
+
+@mixin ButtonColorCustom() {
+  background: -moz-linear-gradient(left, #ff9b44 0%, #fc6075 100%);
+  background: -webkit-linear-gradient(left, #ff9b44 0%, #fc6075 100%);
+  background: -ms-linear-gradient(left, #ff9b44 0%, #fc6075 100%);
+  background: linear-gradient(to right, #ff9b44 0%, #fc6075 100%);
+}
+
+@mixin PlaceholderDark() {
+  position: relative;
+  background-color: #003366;
+  color: #fa8c15;
+}

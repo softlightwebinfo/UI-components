@@ -1,0 +1,17 @@
+// Generated with util/create-component.js
+@import "src/index";
+
+.Flex {
+  @include font-defaults;
+  color: $harvey-blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: em(-5);
+
+  &--spacing {
+    > * {
+      margin: em(5);
+    }
+  }
+}

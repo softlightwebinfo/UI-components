@@ -1,0 +1,16 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+
+.ProgressLabel {
+  @include font-defaults;
+  color: $harvey-blue;
+
+  &__label {
+    margin-bottom: $margin-bottom;
+
+    + span {
+      margin-bottom: $margin-bottom;
+      font-size: em(12);
+    }
+  }
+}

@@ -1,0 +1,25 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+
+.HeaderHorizontalMain {
+  @include font-defaults;
+  @extend %Dark;
+  flex: 0 0 auto;
+  color: #262626;
+  z-index: 10;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  padding: 25px 0 35px;
+  height: auto;
+}

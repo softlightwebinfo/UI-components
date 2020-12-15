@@ -1,0 +1,28 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+
+.HeaderLayout {
+  @include font-defaults;
+  position: relative;
+  background-color: #003366;
+  color: #fa8c15;
+
+  &:before {
+    content: '';
+    position: absolute;
+    right: 169px;
+    top: -212px;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 280px;
+    height: 350px;
+    -webkit-border-radius: 0 0 135px 135px;
+    -moz-border-radius: 0 0 135px 135px;
+    border-radius: 0 0 135px 135px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    z-index: 15;
+  }
+}

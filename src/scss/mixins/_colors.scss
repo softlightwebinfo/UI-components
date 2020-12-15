@@ -1,0 +1,37 @@
+@mixin GetColors() {
+  @each $key, $value in $color-array {
+    &--#{$key} {
+      color: map_get($value, "normal");
+      border-color: map_get($value, "normal");
+    }
+  }
+}
+
+@mixin GetColorsBg($isModified:'', $isHover: false) {
+  $modifier: '--';
+  @if ($isModified == false) {
+    $modifier: '-';
+  }
+  @each $key, $value in $color-array {
+    &#{$modifier}#{$key} {
+      background-color: map_get($value, "normal");
+      color: white;
+      background-image: none;
+      @if ($isHover) {
+        &:hover {
+          background-image: none;
+          background-color: map_get($value, "hover");
+        }
+      }
+    }
+  }
+}
+
+@mixin Gradient() {
+  background-color: #872776;
+  background: -webkit-gradient(linear, left top, right top, from(#872776), to(#352883));
+  background: -webkit-linear-gradient(left, #872776, #352883);
+  background: -moz-linear-gradient(left, #872776, #352883);
+  background: -ms-linear-gradient(left, #872776, #352883);
+  background: -o-linear-gradient(left, #872776, #352883);
+}

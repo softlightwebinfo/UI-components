@@ -1,0 +1,7 @@
+// Generated with util/create-component.js
+@import "src/index";
+.Center {
+  @include font-defaults;
+  color: $harvey-green;
+  text-align: center;
+}

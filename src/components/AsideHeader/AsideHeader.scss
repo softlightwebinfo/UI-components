@@ -1,0 +1,29 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+
+.AsideHeader {
+  @include font-defaults;
+  color: $harvey-blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: em(20);
+
+  &__logo {
+    img {
+      height: 40px;
+      border: 0;
+      display: block;
+    }
+  }
+
+  &__right {
+    color: white;
+
+    > * {
+      &:hover {
+        color: black;
+      }
+    }
+  }
+}

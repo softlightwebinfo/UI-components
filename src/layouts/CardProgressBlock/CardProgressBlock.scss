@@ -1,0 +1,29 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+
+.CardProgressBlock {
+  @include font-defaults;
+  color: $harvey-blue;
+  width: 100%;
+
+  &__date {
+    line-height: 40px;
+  }
+
+  &__title {
+    margin-top: em(5);
+    margin-bottom: em(5);
+  }
+
+  &--position {
+    &-vertical {
+      .Card__body {
+        display: flex;
+      }
+
+      .Progress {
+        margin-right: 20px;
+      }
+    }
+  }
+}

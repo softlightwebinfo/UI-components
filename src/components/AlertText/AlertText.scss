@@ -1,0 +1,10 @@
+// Generated with util/create-component.js
+@import "src/index";
+
+.AlertText {
+  @include font-defaults;
+  color: $harvey-red;
+  display: flex;
+  font-size: 12px;
+  font-weight: 400;
+}

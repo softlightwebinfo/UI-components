@@ -1,0 +1,46 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+
+.Dropdown {
+  @include font-defaults;
+  color: $harvey-green;
+
+  &__trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    > span {
+      margin-right: 20px;
+    }
+  }
+
+  &__menu {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  &__option {
+    padding: em(10);
+
+    &--active {
+      background: $color-hover;
+      font-weight: bold;
+    }
+
+    &:hover {
+      background: $color-hover;
+      cursor: pointer;
+    }
+  }
+
+
+  .Popover__trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    flex: 1;
+  }
+}

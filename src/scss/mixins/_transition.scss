@@ -1,0 +1,14 @@
+@mixin Transition($attr...) {
+  transition: $attr;
+  -webkit-transition: $attr;
+  -moz-transition: $attr;
+  -o-transition: $attr;
+}
+
+@mixin TransitionDefault() {
+  @include Transition(all .3s ease-in-out);
+}
+
+@mixin TransitionDefaultAccordion() {
+  @include Transition(all .5s ease-in-out);
+}

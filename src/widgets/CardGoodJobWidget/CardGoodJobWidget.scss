@@ -1,0 +1,50 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+
+.CardGoodJobWidget {
+  @include font-defaults;
+  background-color: rgb(92, 119, 255);
+  flex-direction: row;
+  box-sizing: border-box;
+  display: flex;
+  border-radius: 0.2rem;
+
+  &__left {
+    flex: 0 0 auto;
+    align-self: center;
+    padding: 1rem;
+    margin-left: 1rem;
+    .IconSvg svg {
+      height: 168px;
+      width: 152px;
+      max-width: 100%;
+      display: block;
+    }
+  }
+
+  &__title {
+    margin-bottom: 5px;
+  }
+
+  &__right {
+    flex: 1 1 auto;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+  }
+
+  &__rows {
+    margin-top: auto;
+  }
+
+  &__item {
+    svg {
+      margin-right: em(10);
+    }
+
+    span {
+      font-size: em(14);
+    }
+  }
+}

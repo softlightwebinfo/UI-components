@@ -1,0 +1,14 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+
+.Logo {
+  @include font-defaults;
+  color: $harvey-blue;
+  width: em(90);
+
+  img {
+    width: 100%;
+    display: block;
+    border: 0;
+  }
+}

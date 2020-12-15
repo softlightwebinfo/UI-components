@@ -1,0 +1,13 @@
+// Generated with util/create-component.js
+@import "src/index";
+
+.ActivityTimeline {
+  @include font-defaults;
+  color: $harvey-blue;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

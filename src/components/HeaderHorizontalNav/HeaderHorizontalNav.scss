@@ -1,0 +1,21 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+
+.HeaderHorizontalNav {
+  @include font-defaults;
+  position: relative;
+  z-index: 2;
+  background-color: #fefefe;
+  color: #7a7a7a;
+
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__left {
+    flex: 1;
+  }
+}
