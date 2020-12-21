@@ -15,12 +15,14 @@ const Card: React.FC<CardProps> = (
         multipleBody = [],
         dark = false,
         gradient,
+        isTitleLabel,
         ...props
     }) => {
         const bem = new BEM("Card", {
             multipleBody: !!multipleBody,
             dark: !!dark,
             gradient: gradient,
+            titleLabel: isTitleLabel,
         });
         bem.Append(className);
         return (
@@ -35,7 +37,7 @@ const Card: React.FC<CardProps> = (
                             className={bem.Children("title")}
                             component={"h2"}
                         >
-                            <span className={bem.Children("icon")}>{props.icon}</span>
+                            {props.icon && <span className={bem.Children("icon")}>{props.icon}</span>}
                             {title}
                         </Typography>
                         <div>{props.actions}</div>

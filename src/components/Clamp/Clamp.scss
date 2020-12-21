@@ -1,0 +1,14 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+
+.Clamp {
+  @include font-defaults;
+  color: $harvey-green;
+  background-color: #D8D8D8;
+  border: 1px solid #979797;
+  width: 17px;
+  height: 17px;
+  border-radius: $border-radius-full;
+  margin: 1px;
+  display: inline-flex;
+}

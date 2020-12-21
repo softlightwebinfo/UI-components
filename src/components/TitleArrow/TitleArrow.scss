@@ -1,0 +1,22 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+
+.TitleArrow {
+  margin-bottom: $margin-bottom * 2;
+
+  &__content {
+    @include font-defaults;
+    color: $harvey-blue;
+    background-color: white;
+    padding: 2em;
+    text-align: center;
+  }
+
+  &--spaceTop {
+    margin-top: $margin-bottom;
+  }
+
+  &:after {
+    @include ArrowDown;
+  }
+}

@@ -1,0 +1,97 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+
+.CardArticleFeaturedWidget {
+  $then: &;
+  @include font-defaults;
+  color: $harvey-blue;
+  @include Shadow(none);
+  border: 0;
+  margin-bottom: $margin-bottom;
+
+  &__header {
+    img {
+      display: block;
+      border: 0;
+    }
+
+    .Clamps {
+      position: absolute;
+      right: $margin-bottom;
+      top: $margin-bottom / 2;
+    }
+  }
+
+  &__title {
+    padding-left: $margin-bottom;
+    padding-right: $margin-bottom;
+    color: $harvey-blue;
+    //margin-bottom: $margin-bottom * 2;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  &__avatar {
+    padding-left: $margin-bottom;
+    padding-right: $margin-bottom;
+    margin-top: -#{rem(33)};
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: $margin-bottom * 2;
+
+    .Avatar {
+      background-color: white;
+      padding: rem(5);
+      width: 4rem;
+      height: 4rem;
+      border: 1px solid gainsboro;
+      border-radius: rem(5);
+
+      &__img {
+        border-radius: rem(5);
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    padding-left: $margin-bottom;
+    padding-right: $margin-bottom;
+    padding-bottom: $margin-bottom / 2;
+  }
+
+  &__description {
+    color: $harvey-blue;
+    padding-right: $margin-bottom;
+    padding-left: $margin-bottom;
+    margin-bottom: $margin-bottom * 2;
+  }
+
+  &__clamps {
+    margin-right: $margin-bottom;
+  }
+
+  &__breadcrumb {
+    font-size: .7em;
+  }
+
+  &--isFeatured {
+    background-color: $color-featured;
+    @include Shadow(10px 10px 10px -16px black);
+
+    #{$then}__header {
+      .Clamps .Clamp {
+        background-color: $color-featured;
+      }
+    }
+
+    #{$then}__avatar {
+      .Avatar {
+        background-color: $color-featured;
+        border: 0;
+      }
+    }
+  }
+}

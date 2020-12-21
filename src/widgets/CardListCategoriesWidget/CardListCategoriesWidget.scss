@@ -1,0 +1,24 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+
+.CardListCategoriesWidget {
+  @include font-defaults;
+  color: $harvey-blue;
+  overflow: initial;
+  height: 100%;
+
+  .Card__header {
+    position: absolute;
+    bottom: 100%;
+    background-color: $color-white;
+    color: $harvey-blue;
+    border-radius: 2.5rem;
+    padding: 0.2rem 1rem;
+    border: 1px solid gainsboro;
+    font-size: .8em;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    margin: -14px auto;
+  }
+}

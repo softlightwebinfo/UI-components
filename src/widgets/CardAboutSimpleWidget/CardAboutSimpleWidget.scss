@@ -1,0 +1,31 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+
+.CardAboutSimpleWidget {
+  @include font-defaults;
+  color: $harvey-blue;
+  margin-bottom: $margin-bottom;
+  @include Shadow(none);
+  border: 0;
+
+  &__title {
+    margin-bottom: $margin-bottom;
+  }
+
+  &__title,
+  &__description {
+    text-decoration: none;
+  }
+
+  &__icon {
+    border-radius: $border-radius-full;
+    background: gainsboro;
+    width: em(40);
+    height: em(40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: $margin-bottom / 2 auto;
+    font-size: 2em;
+  }
+}

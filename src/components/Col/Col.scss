@@ -1,0 +1,55 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+
+.Col {
+  @include font-defaults;
+  color: $harvey-blue;
+  padding-left: $grid-margin;
+  padding-right: $grid-margin;
+  flex: 1 1 0;
+  box-sizing: border-box;
+
+  &--paddingBottom {
+    padding-bottom: $margin-bottom * 2;
+  }
+
+  &--alignSelf {
+    &-flex-start {
+      align-self: flex-start;
+    }
+
+    &-flex-end {
+      align-self: flex-end;
+    }
+
+    &-center {
+      align-self: center;
+    }
+
+    &-baseline {
+      align-self: baseline;
+    }
+
+    &_stretch {
+      align-self: stretch;
+    }
+  }
+
+  &--noGrow {
+    flex-grow: 0;
+  }
+
+  &--grow {
+    flex-grow: 1;
+  }
+
+  &--noSkrink {
+    flex-shrink: 0;
+  }
+
+  &--skrink {
+    flex-shrink: 1;
+  }
+
+  @include GenerateAllColClassnames();
+}
