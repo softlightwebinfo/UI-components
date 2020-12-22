@@ -10,7 +10,7 @@ export interface ColProps extends IProps {
     lg?: number;
     xl?: number;
     auto?: boolean;
-    children: ReactElement;
+    children: ReactElement | ReactElement[];
     alignSelf?: TAlignItems;
     grow?: boolean;
     paddingBottom?: boolean;

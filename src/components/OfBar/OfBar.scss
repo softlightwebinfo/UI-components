@@ -1,0 +1,44 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+
+.OfBar {
+  @include font-defaults;
+  background-color: $color-dark-ofbar;
+  font-size: em(16);
+  color: $color-white;
+  padding: rem(16);
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  bottom: rem(20);
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: $z-index-modal;
+  border-radius: $border-radius-simple;
+  @include Shadow(0 rem(13) rem(27) rem(-5) rgba(50, 50, 93, 0.25), 0 rem(8) rem(16) rem(-8) rgba(0, 0, 0, .3), 0 rem(-6) rem(16) rem(-6) rgba(0, 0, 0, 0.025));
+  width: 80%;
+
+  &__actions {
+    display: flex;
+    align-items: center;
+  }
+
+  &__button {
+    margin-right: $margin-bottom;
+  }
+
+  .AvatarUser {
+    &--horizontal {
+      padding: 0;
+
+      .Avatar {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}

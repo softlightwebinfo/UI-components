@@ -23,11 +23,11 @@ const Col: React.FC<ColProps> = (
     }) => {
     const bem = new BEM("Col", {
         [col]: !!col,
-        xs: xs.toString(),
-        sm: sm.toString(),
-        md: md.toString(),
-        lg: lg.toString(),
-        xl: xl.toString(),
+        xs: xs && xs.toString(),
+        sm: sm && sm.toString(),
+        md: md && md.toString(),
+        lg: lg && lg.toString(),
+        xl: xl && xl.toString(),
         auto: auto,
         alignSelf: alignSelf,
         grow: grow,

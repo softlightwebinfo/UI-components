@@ -1,13 +1,19 @@
 import InviteFriendsWidget from "./InviteFriendsWidget/InviteFriendsWidget";
 import CardAppDownloadWidget from "./CardAppDownloadWidget/CardAppDownloadWidget";
+import CardGoodJobWidget from "./CardGoodJobWidget/CardGoodJobWidget";
+import CardAboutSimpleWidget from "./CardAboutSimpleWidget/CardAboutSimpleWidget";
+import CardArticleFeaturedWidget from "./CardArticleFeaturedWidget/CardArticleFeaturedWidget";
+import CardListCategoriesWidget from "./CardListCategoriesWidget/CardListCategoriesWidget";
+import FooterWidget from "./FooterWidget/FooterWidget";
+import FooterBigWidget from "./FooterBigWidget/FooterBigWidget";
+import FooterListWidget from "./FooterListWidget/FooterListWidget";
 
 export { InviteFriendsWidget }
 export { CardAppDownloadWidget }
-import CardGoodJobWidget from "./CardGoodJobWidget/CardGoodJobWidget";
-export {CardGoodJobWidget}
-import CardAboutSimpleWidget from "./CardAboutSimpleWidget/CardAboutSimpleWidget";
-export {CardAboutSimpleWidget}
-import CardArticleFeaturedWidget from "./CardArticleFeaturedWidget/CardArticleFeaturedWidget";
-export {CardArticleFeaturedWidget}
-import CardListCategoriesWidget from "./CardListCategoriesWidget/CardListCategoriesWidget";
-export {CardListCategoriesWidget}
+export { CardGoodJobWidget }
+export { CardAboutSimpleWidget }
+export { CardArticleFeaturedWidget }
+export { CardListCategoriesWidget }
+export { FooterWidget }
+export { FooterBigWidget }
+export { FooterListWidget }

@@ -161,3 +161,7 @@ export { Clamp }
 export { Clamps }
 import RowLabelCount from "./RowLabelCount/RowLabelCount";
 export {RowLabelCount}
+import Footer from "./Footer/Footer";
+export {Footer}
+import OfBar from "./OfBar/OfBar";
+export {OfBar}

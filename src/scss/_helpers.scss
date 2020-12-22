@@ -50,3 +50,9 @@ body {
     color: $color-info;
   }
 }
+
+.h-spacer {
+  > * {
+    margin-right: 5px;
+  }
+}

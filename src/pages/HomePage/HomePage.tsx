@@ -6,12 +6,18 @@ import { BEM } from "../../libs/BEM";
 import TitleArrow from "../../components/TitleArrow/TitleArrow";
 import HeaderLayout from "../../layouts/HeaderLayout/HeaderLayout";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBoxes, faCog, faFire, faList, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faBox, faBoxes, faCog, faFire, faList, faUser } from "@fortawesome/free-solid-svg-icons";
 import { DropdownPropsData } from "../../components/Dropdown/Dropdown.types";
 import { MenuPropsMenuItem } from "../../components/Menu/Menu.types";
 import { Button, Carousel, Col, Container, Row } from "../../components";
-import { CardAboutSimpleWidget, CardArticleFeaturedWidget, CardListCategoriesWidget } from "../../widgets";
+import {
+    CardAboutSimpleWidget,
+    CardArticleFeaturedWidget,
+    CardListCategoriesWidget,
+    FooterBigWidget
+} from "../../widgets";
 import { randomInteger } from "../../functions/generator";
+import OfBar from "../../components/OfBar/OfBar";
 
 const HomePage: React.FC<HomePageProps> = ({className, style, children}) => {
     const [state, setState] = useState({
@@ -256,6 +262,51 @@ const HomePage: React.FC<HomePageProps> = ({className, style, children}) => {
                     ))}
                 </Row>
             </Container>
+            <FooterBigWidget
+                top={{
+                    titleLeft: "Cientos de anuncios",
+                    descriptionLeft: "Probably the best UI Kit in the world! We know you've been waiting for it, so don't be shy!",
+                    titleRight: "Subscribe to newsletter",
+                    descriptionRight: "Probably the best UI Kit in the world! We know you've been waiting for it, so don't be shy!",
+                    links: [
+                        {title: "About", links: ["Blog", "About us", "Presentation", "Contact us"]},
+                        {title: "Menu", links: ["Home", "Articles", "Login", "Create account"]},
+                        {title: "Legal", links: ["FAQ", "Terms & Conditions", "Licences", "Cookies"]},
+                    ],
+                }}
+                bottom={{
+                    title: "Codeunic UI Components",
+                    textRight: "Copyright © 2020 Codeunic All Rights Reserved.",
+                    links: {
+                        wrapper: (component, row) => (
+                            <a href={row.route}>{component}</a>
+                        ),
+                        list: [
+                            {label: "Blog", route: "blog"},
+                            {label: "Presentation", route: "blog"},
+                            {label: "Discover", route: "blog"},
+                            {label: "Payment", route: "blog"},
+                            {label: "Contact us", route: "blog"},
+                        ]
+                    }
+                }}
+            />
+            <OfBar
+                show
+                avatar={"https://bit.ly/dan-abramov"}
+                name={"System"}
+                role={"Admin"}
+                message={
+                    <div className={"h-spacer"}>
+                        <FontAwesomeIcon icon={faBox}/>
+                        <b>Winter sale!</b>
+                        Take advantage of our 6 Special and save
+                        <b>up 85% off</b>
+                    </div>
+                }
+                onClose={() => alert("Hello")}
+                onClickButton={() => alert("hello")}
+                labelButton={"View Offers"}/>
         </section>
     )
 };

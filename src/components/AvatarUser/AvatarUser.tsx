@@ -13,9 +13,11 @@ const AvatarUser: React.FC<AvatarUserProps> = (
         avatar,
         subTitle,
         isDark,
+        horizontal
     }) => {
     const bem = new BEM("AvatarUser", {
         isDark: !!isDark,
+        horizontal: horizontal,
     });
     bem.Append(className);
     return (
@@ -24,9 +26,16 @@ const AvatarUser: React.FC<AvatarUserProps> = (
             className={bem.toString()}
         >
             <Avatar className={bem.Children("avatar")} name={name} src={avatar}/>
-            <Typography align={"center"} variant={"body1"} className={bem.Children("name")}>{name}</Typography>
-            <Typography align={"center"} variant={"caption"}
-                        className={bem.Children("subTitle")}>{subTitle}</Typography>
+            <div className={bem.Children("content")}>
+                <Typography align={"center"} variant={"body1"} className={bem.Children("name")}>{name}</Typography>
+                <Typography
+                    align={"center"}
+                    variant={"caption"}
+                    className={bem.Children("subTitle")}
+                >
+                    {subTitle}
+                </Typography>
+            </div>
         </div>
     )
 };

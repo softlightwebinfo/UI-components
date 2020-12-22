@@ -1,0 +1,14 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+
+.FooterListWidget {
+  @include font-defaults;
+  color: $harvey-blue;
+  background-color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  &__title {
+    margin-bottom: $margin-bottom;
+  }
+}
