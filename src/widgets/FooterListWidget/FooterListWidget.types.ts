@@ -9,7 +9,7 @@ export interface FooterListWidgetProps extends IProps {
     descriptionRight: string;
     links: FooterListWidgetPropsLink[];
 
-    linkWrapper?(component: ReactElement, row: FooterListWidgetPropsLink);
+    linkWrapper?(component: ReactElement, rowLabel: string);
 }
 
 export interface FooterListWidgetPropsLink {
