@@ -1,0 +1,41 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+
+.FooterWidget {
+  @include font-defaults;
+  color: $color-white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: white;
+
+    > * {
+      text-decoration: none;
+      color: white;
+      margin-left: 5px;
+      margin-right: 5px;
+      text-transform: uppercase;
+      font-size: 0.70em;
+    }
+  }
+
+  &__right {
+    color: white;
+    font-size: 0.80em;
+  }
+
+  &__left {
+    color: white;
+  }
+}

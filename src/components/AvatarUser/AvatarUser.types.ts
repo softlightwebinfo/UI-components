@@ -6,4 +6,5 @@ export interface AvatarUserProps extends IProps {
     avatar: string;
     subTitle: string;
     isDark?: boolean;
+    horizontal?: boolean;
 }

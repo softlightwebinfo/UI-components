@@ -1,0 +1,108 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+
+.Row {
+  @include font-defaults;
+  color: $harvey-blue;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+
+  &--grid {
+    margin-left: $grid-margin;
+    margin-right: $grid-margin;
+  }
+
+  &--marginCollapse {
+    margin: 0;
+  }
+
+  &--smVertical {
+    @include FlexGrid--vertical;
+  }
+
+  &--reverse {
+    flex-direction: row-reverse;
+  }
+
+  &--alignContent {
+    &-flex-end {
+      justify-content: flex-end;
+    }
+
+    &-flex-start {
+      justify-content: flex-start;
+    }
+  }
+
+  &--vertical#{&--alignContent-flex-end},
+  &--mdVertical#{&--alignContent-flex-end} {
+    align-items: flex-end;
+  }
+
+  &--vertical#{&--alignContent-flex-start},
+  &--mdVertical#{&--alignContent-flex-start} {
+    align-items: flex-start;
+  }
+
+  &--alignContent {
+    &-center {
+      justify-content: center;
+    }
+
+    &-space-between {
+      justify-content: space-between;
+    }
+
+    &-space-around {
+      justify-content: space-around;
+    }
+
+    &-start {
+      align-items: flex-start;
+    }
+
+    &-end {
+      align-items: flex-end;
+    }
+
+    &-stretch {
+      align-items: stretch;
+    }
+  }
+
+  &--alignItems {
+    &-center {
+      align-items: center;
+    }
+
+    &-flex-start {
+      align-items: flex-start;
+    }
+
+    &-flex-end {
+      align-items: flex-end;
+    }
+
+    &-stretch {
+      align-items: stretch;
+    }
+
+    &-baseline {
+      align-items: baseline;
+    }
+  }
+
+  @media screen and(min-width: em(800)) {
+    &--mdVertical {
+      @include FlexGrid--vertical;
+    }
+  }
+
+  @media screen and(min-width: 64em) {
+    &--lgVertical {
+      @include FlexGrid--vertical;
+    }
+  }
+}

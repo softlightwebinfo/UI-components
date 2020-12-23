@@ -1,0 +1,9 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+.RowLabelCount {
+  @include font-defaults;
+  color: $harvey-blue;
+  &+&{
+    margin-top: $margin-min-bottom;
+  }
+}
