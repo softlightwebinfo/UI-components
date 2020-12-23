@@ -1,0 +1,6 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+.ContainerFluid {
+  @include font-defaults;
+  @include ContainerFluid;
+}

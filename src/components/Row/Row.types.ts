@@ -9,6 +9,7 @@ export interface RowProps extends IProps {
     mdVertical?: boolean;
     lgVertical?: boolean;
     reverse?: boolean;
+    containerFluid?: boolean;
     alignContent?: TAlignContent;
     alignItems?: TAlignItems;
 }

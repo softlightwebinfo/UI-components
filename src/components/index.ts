@@ -173,3 +173,5 @@ import Section from "./Section/Section";
 export {Section}
 import Info from "./Info/Info";
 export {Info}
+import ContainerFluid from "./ContainerFluid/ContainerFluid";
+export {ContainerFluid}

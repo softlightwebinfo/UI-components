@@ -21,6 +21,7 @@ const Row: React.FC<RowProps> = (
         reverse: props.reverse,
         alignContent: props.alignContent,
         alignItems: props.alignItems,
+        fluid: props.containerFluid,
     });
     bem.Append(className);
     return (
