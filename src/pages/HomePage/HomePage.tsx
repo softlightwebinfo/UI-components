@@ -17,7 +17,6 @@ import {
     FooterBigWidget
 } from "../../widgets";
 import { randomInteger } from "../../functions";
-import image from '../../public/images/background.jpg';
 import OfBar from "../../components/OfBar/OfBar";
 import { SectionInfoLayout } from "../../layouts";
 
@@ -282,7 +281,7 @@ const HomePage: React.FC<HomePageProps> = ({className, style, children}) => {
             </Row>
             <SectionInfoLayout
                 spaceTop
-                backgroundImage={image}
+                backgroundImage={"https://oij.org/wp-content/uploads/2018/03/fondo-Azul-1100x730.png"}
                 image={"https://lh3.googleusercontent.com/proxy/vyPaIB-Sh-PpWO9YgaW6ndZfZTp_Pzcxs02VjdoGE9egGooQ1OP5yujz_PPUTeWKfgVEWfRBu83-lgbHPxKOvNpWN4OnMcCOSG7PT36umlJsXcBiPUL1Cw"}
                 imageTitle={"New Horizons"}
                 list={[

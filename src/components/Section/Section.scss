@@ -1,0 +1,13 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+
+.Section {
+  @include font-defaults;
+  color: $harvey-blue;
+  background-color: $color-white;
+  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+  padding: em(80) 0;
+}
