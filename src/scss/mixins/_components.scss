@@ -26,3 +26,9 @@
   background-color: #003366;
   color: #fa8c15;
 }
+
+@mixin ContainerFluid() {
+  padding-left: $margin-bottom;
+  padding-right: $margin-bottom;
+  width: 100%;
+}

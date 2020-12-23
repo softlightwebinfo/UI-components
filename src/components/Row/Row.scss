@@ -94,6 +94,10 @@
     }
   }
 
+  &--fluid {
+    @include ContainerFluid;
+  }
+
   @media screen and(min-width: em(800)) {
     &--mdVertical {
       @include FlexGrid--vertical;

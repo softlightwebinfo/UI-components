@@ -268,7 +268,7 @@ const HomePage: React.FC<HomePageProps> = ({className, style, children}) => {
                 title={"Proyectos destacados"}
                 subTitle={"ads, mallorca, music, homes, second hand, new, companies"}
             />
-            <Row>
+            <Row containerFluid>
                 {[...new Array(4 * 9)].map((value, index) => (
                     <Col noPadding xs={12} sm={6} md={6} lg={3} xl={3} key={index}>
                         <CardImage
