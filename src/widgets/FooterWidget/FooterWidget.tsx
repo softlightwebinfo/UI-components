@@ -26,7 +26,11 @@ const FooterWidget: React.FC<FooterWidgetProps> = ({className, style, children, 
                 <nav className={bem.Children("list")}>
                     {links.list.map((value, index) => {
                         const component = <span>{value.label}</span>
-                        return links.wrapper ? links.wrapper(component, value) : component
+                        return links.wrapper ? (
+                            <div key={index}>
+                                {links.wrapper(component, value)}
+                            </div>
+                        ) : <div key={index}>{component}</div>
                     })}
                 </nav>
                 <Typography className={bem.Children("right")}>

@@ -1,6 +1,11 @@
 // Generated with util/create-component.js
 @import "../../index.scss";
+
 .FooterBigWidget {
   @include font-defaults;
-  color: $harvey-green;
+  color: $harvey-blue;
+
+  &--spaceTop {
+    margin-top: $margin-bottom * 2;
+  }
 }

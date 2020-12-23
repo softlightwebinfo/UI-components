@@ -165,3 +165,11 @@ import Footer from "./Footer/Footer";
 export {Footer}
 import OfBar from "./OfBar/OfBar";
 export {OfBar}
+import CardImage from "./CardImage/CardImage";
+export {CardImage}
+import Image from "./Image/Image";
+export {Image}
+import Section from "./Section/Section";
+export {Section}
+import Info from "./Info/Info";
+export {Info}

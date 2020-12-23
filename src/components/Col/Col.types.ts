@@ -14,6 +14,7 @@ export interface ColProps extends IProps {
     alignSelf?: TAlignItems;
     grow?: boolean;
     paddingBottom?: boolean;
+    noPadding?: boolean;
     skrink?: boolean;
     col?: number;
 }
