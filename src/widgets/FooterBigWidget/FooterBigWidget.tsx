@@ -9,8 +9,11 @@ const FooterBigWidget: React.FC<FooterBigWidgetProps> = ({className, style, ...p
     const {
         bottom,
         top,
+        spaceTop,
     } = props;
-    const bem = new BEM("FooterBigWidget", {});
+    const bem = new BEM("FooterBigWidget", {
+        spaceTop: spaceTop,
+    });
     bem.Append(className);
     return (
         <div

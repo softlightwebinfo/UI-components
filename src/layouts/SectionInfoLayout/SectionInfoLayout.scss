@@ -1,9 +1,13 @@
 // Generated with util/create-component.js
 @import "../../index.scss";
 
-.FooterBigWidget {
+.SectionInfoLayout {
   @include font-defaults;
   color: $harvey-blue;
+
+  .Info {
+    max-width: em(410);
+  }
 
   &--spaceTop {
     margin-top: $margin-bottom * 2;

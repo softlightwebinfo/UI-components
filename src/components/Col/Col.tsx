@@ -20,6 +20,7 @@ const Col: React.FC<ColProps> = (
         skrink,
         col,
         paddingBottom,
+        noPadding,
     }) => {
     const bem = new BEM("Col", {
         [col]: !!col,
@@ -35,6 +36,7 @@ const Col: React.FC<ColProps> = (
         skrink: skrink,
         noSkrink: !skrink,
         paddingBottom: paddingBottom,
+        noPadding: noPadding,
     });
     bem.Append(className);
     return (

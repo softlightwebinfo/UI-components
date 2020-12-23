@@ -51,5 +51,9 @@
     flex-shrink: 1;
   }
 
+  &--noPadding {
+    padding: 0;
+  }
+
   @include GenerateAllColClassnames();
 }

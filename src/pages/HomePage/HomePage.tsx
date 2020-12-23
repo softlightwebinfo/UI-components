@@ -6,18 +6,19 @@ import { BEM } from "../../libs/BEM";
 import TitleArrow from "../../components/TitleArrow/TitleArrow";
 import HeaderLayout from "../../layouts/HeaderLayout/HeaderLayout";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBox, faBoxes, faCog, faFire, faList, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faBox, faBoxes, faCog, faFire, faList, faMoneyBill, faUser } from "@fortawesome/free-solid-svg-icons";
 import { DropdownPropsData } from "../../components/Dropdown/Dropdown.types";
 import { MenuPropsMenuItem } from "../../components/Menu/Menu.types";
-import { Button, Carousel, Col, Container, Row } from "../../components";
+import { Button, CardImage, Carousel, Col, Container, Row } from "../../components";
 import {
     CardAboutSimpleWidget,
     CardArticleFeaturedWidget,
     CardListCategoriesWidget,
     FooterBigWidget
 } from "../../widgets";
-import { randomInteger } from "../../functions/generator";
+import { randomInteger } from "../../functions";
 import OfBar from "../../components/OfBar/OfBar";
+import { SectionInfoLayout } from "../../layouts";
 
 const HomePage: React.FC<HomePageProps> = ({className, style, children}) => {
     const [state, setState] = useState({
@@ -195,7 +196,7 @@ const HomePage: React.FC<HomePageProps> = ({className, style, children}) => {
                 ]}
             />
             <TitleArrow
-                title={"About Us"}
+                title={"Sobre nosotros"}
                 subTitle={"ads, mallorca, music, homes, second hand, new, companies"}
             />
             <Container>
@@ -215,7 +216,7 @@ const HomePage: React.FC<HomePageProps> = ({className, style, children}) => {
             </Container>
             <TitleArrow
                 spaceTop
-                title={"Featured Articles"}
+                title={"Anuncios destacados"}
                 subTitle={"ads, mallorca, music, homes, second hand, new, companies"}
             />
             <Container>
@@ -243,7 +244,7 @@ const HomePage: React.FC<HomePageProps> = ({className, style, children}) => {
             </Container>
             <TitleArrow
                 spaceTop
-                title={"Categories"}
+                title={"Listado de categorias"}
                 subTitle={"ads, mallorca, music, homes, second hand, new, companies"}
             />
             <Container>
@@ -262,6 +263,45 @@ const HomePage: React.FC<HomePageProps> = ({className, style, children}) => {
                     ))}
                 </Row>
             </Container>
+            <TitleArrow
+                spaceTop
+                title={"Proyectos destacados"}
+                subTitle={"ads, mallorca, music, homes, second hand, new, companies"}
+            />
+            <Row>
+                {[...new Array(4 * 9)].map((value, index) => (
+                    <Col noPadding xs={12} sm={6} md={6} lg={3} xl={3} key={index}>
+                        <CardImage
+                            key={index}
+                            image={"https://lh3.googleusercontent.com/proxy/vyPaIB-Sh-PpWO9YgaW6ndZfZTp_Pzcxs02VjdoGE9egGooQ1OP5yujz_PPUTeWKfgVEWfRBu83-lgbHPxKOvNpWN4OnMcCOSG7PT36umlJsXcBiPUL1Cw"}
+                            title={`Title ${index}`}
+                        />
+                    </Col>
+                ))}
+            </Row>
+            <SectionInfoLayout
+                spaceTop
+                backgroundImage={"https://oij.org/wp-content/uploads/2018/03/fondo-Azul-1100x730.png"}
+                image={"https://lh3.googleusercontent.com/proxy/vyPaIB-Sh-PpWO9YgaW6ndZfZTp_Pzcxs02VjdoGE9egGooQ1OP5yujz_PPUTeWKfgVEWfRBu83-lgbHPxKOvNpWN4OnMcCOSG7PT36umlJsXcBiPUL1Cw"}
+                imageTitle={"New Horizons"}
+                list={[
+                    {
+                        icon: faMoneyBill,
+                        title: "Save Time & Money",
+                        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+                    },
+                    {
+                        icon: faMoneyBill,
+                        title: "Save Time & Money",
+                        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+                    },
+                    {
+                        icon: faMoneyBill,
+                        title: "Save Time & Money",
+                        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+                    }
+                ]}
+            />
             <FooterBigWidget
                 top={{
                     titleLeft: "Cientos de anuncios",
@@ -306,7 +346,9 @@ const HomePage: React.FC<HomePageProps> = ({className, style, children}) => {
                 }
                 onClose={() => alert("Hello")}
                 onClickButton={() => alert("hello")}
-                labelButton={"View Offers"}/>
+                labelButton={"View Offers"}
+            />
+
         </section>
     )
 };

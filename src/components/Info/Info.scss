@@ -1,0 +1,36 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+
+.Info {
+  $then: &;
+  @include font-defaults;
+  color: $harvey-blue;
+  margin: 0;
+
+  &__left {
+    margin-right: 1em;
+  }
+
+  #{$then} &__icon {
+    $w: 2em;
+    color: $color-white;
+    width: $w;
+    height: $w;
+    margin-top: -4px;
+  }
+
+  &__title {
+    color: $color-white;
+    margin-bottom: $margin-bottom;
+  }
+
+  &__description {
+    color: hsla(0, 0, 100%, .8);
+  }
+
+  &--horizontal {
+    text-align: left;
+    padding: 1em 0 0;
+    display: flex;
+  }
+}

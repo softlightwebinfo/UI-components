@@ -6,4 +6,5 @@ import { FooterListWidgetProps } from "../FooterListWidget/FooterListWidget.type
 export interface FooterBigWidgetProps extends IProps {
     top: FooterListWidgetProps;
     bottom: FooterWidgetProps;
+    spaceTop?: boolean;
 }
