@@ -1,0 +1,8 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+
+.Timer {
+  @include font-defaults;
+  font-size: em(12);
+  opacity: .6;
+}

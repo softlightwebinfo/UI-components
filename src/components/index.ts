@@ -185,3 +185,5 @@ import Timer from "./Timer/Timer";
 export {Timer}
 import ContextProvider from "./ContextProvider/ContextProvider";
 export {ContextProvider}
+import Calendar from "./Calendar/Calendar";
+export {Calendar}

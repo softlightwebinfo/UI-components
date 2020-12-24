@@ -1,0 +1,116 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+
+.Calendar {
+  @include font-defaults;
+  background-color: white;
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+  position: relative;
+
+  &-container,
+  &__header,
+  &,
+  td,
+  tr {
+    padding: 0;
+    margin: 0;
+  }
+
+  &-container {
+    border: 2px solid skyblue;
+  }
+
+
+  &__header {
+    border-bottom: 1px dashed skyblue;
+    font-size: 1.6em;
+  }
+
+  &__header td {
+    border-spacing: 0;
+    padding-left: 5px;
+  }
+
+  .day,
+  .empty-slot,
+  .week-day {
+    text-align: center;
+    height: 40px;
+  }
+
+  .week-day {
+    font-size: 0.8em;
+  }
+
+  .day {
+    font-size: 0.8em;
+
+    span {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .day {
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+  }
+
+  .current-day {
+    background-color: #4285f4;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 2%;
+    color: white;
+  }
+
+  .selected-day {
+    background-color: yellow;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 2%;
+    color: black;
+  }
+
+  .month-popup {
+    position: absolute;
+    padding: 5px;
+    background: white;
+    border: 2px solid skyblue;
+  }
+
+  .month-popup div {
+    padding: 0.3em;
+  }
+
+  &__nav-month {
+    position: absolute;
+    top: 0.6em;
+    font-size: 0.6em;
+    right: 3px;
+  }
+
+  .editor-year {
+    max-width: 3.6em;
+  }
+
+  .label-month,
+  .label-year {
+    font-size: 0.6em;
+  }
+
+  .label-month {
+    cursor: pointer;
+  }
+
+  .prev,
+  .next {
+    cursor: pointer;
+  }
+}

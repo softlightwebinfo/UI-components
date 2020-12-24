@@ -21,6 +21,7 @@ const Col: React.FC<ColProps> = (
         col,
         paddingBottom,
         noPadding,
+        offset,
     }) => {
     const bem = new BEM("Col", {
         [col]: !!col,
@@ -39,6 +40,7 @@ const Col: React.FC<ColProps> = (
         noPadding: noPadding,
     });
     bem.Append(className);
+    offset && bem.Append(`${bem.GetParent()}---offset${offset}`);
     return (
         <div
             style={style}

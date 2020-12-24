@@ -4,3 +4,5 @@ import LoginPage from "./LoginPage/LoginPage";
 export {LoginPage}
 import RegisterPage from "./RegisterPage/RegisterPage";
 export {RegisterPage}
+import ContactPage from "./ContactPage/ContactPage";
+export {ContactPage}

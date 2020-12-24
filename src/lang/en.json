@@ -6,5 +6,7 @@
   "phone": "Phone",
   "email": "Email",
   "password": "Password",
-  "youHaveAccount": "You have account"
+  "youHaveAccount": "You have account",
+  "message": "Message",
+  "contactUs": "Contact Us"
 }

@@ -17,4 +17,5 @@ export interface ColProps extends IProps {
     noPadding?: boolean;
     skrink?: boolean;
     col?: number;
+    offset?: number;
 }
