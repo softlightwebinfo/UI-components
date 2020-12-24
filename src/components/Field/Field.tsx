@@ -4,10 +4,12 @@ import { FieldProps } from "./Field.types";
 import "./Field.scss";
 import { BEM } from "../../libs/BEM";
 import { AlertText, FormGroup, Label, SpanTitleText, Typography } from "../../index";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Field: React.FC<FieldProps> = ({className, style, children, ...props}) => {
     const bem = new BEM("Field", {
         rounded: props.rounded,
+        custom: props.custom,
     });
     bem.Append(className);
     const Component = props.formGroup ? FormGroup : "div";
@@ -32,7 +34,12 @@ const Field: React.FC<FieldProps> = ({className, style, children, ...props}) => 
                     {props.description}
                 </Typography>
             )}
-            {children}
+            {props.icon ? (
+                <div className={bem.Children("wrapper")}>
+                    <FontAwesomeIcon icon={props.icon}/>
+                    {children}
+                </div>
+            ) : children}
             {props.hint && (
                 <Typography
                     className={bem.Children("hint")}

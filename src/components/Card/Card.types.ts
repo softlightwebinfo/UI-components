@@ -11,5 +11,6 @@ export interface CardProps extends IProps {
     dark?: boolean;
     gradient?: boolean;
     isTitleLabel?: boolean;
+    transparent?: boolean;
     multipleBody?: ReactElement[];
 }

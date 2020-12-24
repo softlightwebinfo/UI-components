@@ -7,6 +7,8 @@ import CardListCategoriesWidget from "./CardListCategoriesWidget/CardListCategor
 import FooterWidget from "./FooterWidget/FooterWidget";
 import FooterBigWidget from "./FooterBigWidget/FooterBigWidget";
 import FooterListWidget from "./FooterListWidget/FooterListWidget";
+import LoginWidget from "./LoginWidget/LoginWidget";
+import RegisterWidget from "./RegisterWidget/RegisterWidget";
 
 export { InviteFriendsWidget }
 export { CardAppDownloadWidget }
@@ -17,3 +19,5 @@ export { CardListCategoriesWidget }
 export { FooterWidget }
 export { FooterBigWidget }
 export { FooterListWidget }
+export { LoginWidget }
+export { RegisterWidget }

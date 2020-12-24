@@ -1,0 +1,10 @@
+{
+  "btnLogin": "Iniciar sesion",
+  "btnCreateAccount": "Crear nueva cuenta",
+  "needHelp": "Necesitas ayuda",
+  "name": "Nombre",
+  "phone": "Telefono",
+  "email": "Correo electronico",
+  "password": "Contraseña",
+  "youHaveAccount": "Tienes cuenta"
+}

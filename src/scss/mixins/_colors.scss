@@ -27,11 +27,17 @@
   }
 }
 
+@mixin LinearGradient($attr...) {
+  background-color: rgba(3, 161, 224, .6);
+  background: -webkit-gradient(0deg, $attr);
+  background: -webkit-linear-gradient(0deg, $attr);
+  background: -moz-linear-gradient(0deg, $attr);
+  background: -ms-linear-gradient(0deg, $attr);
+  background: -o-linear-gradient(0deg, $attr);
+}
+
+
 @mixin Gradient() {
   background-color: #872776;
-  background: -webkit-gradient(linear, left top, right top, from(#872776), to(#352883));
-  background: -webkit-linear-gradient(left, #872776, #352883);
-  background: -moz-linear-gradient(left, #872776, #352883);
-  background: -ms-linear-gradient(left, #872776, #352883);
-  background: -o-linear-gradient(left, #872776, #352883);
+  @include LinearGradient(linear, left top, right top, from(#872776), to(#352883));
 }

@@ -1,6 +1,7 @@
 // Generated with util/create-component.js
 import { IProps } from "../../interfaces/IProps";
 import { ReactElement } from "react";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 export interface FieldProps extends IProps {
     label?: string;
@@ -11,6 +12,8 @@ export interface FieldProps extends IProps {
     isValid?: boolean;
     rounded?: boolean;
     formGroup?: boolean;
+    custom?: boolean;
+    icon?: IconProp;
 
     onChange?(evt);
 }
