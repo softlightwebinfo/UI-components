@@ -15,6 +15,7 @@ const Button: React.FC<ButtonProps> = (
         colorText,
         element,
         hasIcon,
+        custom,
         ...props
     }) => {
     const bem = new BEM("Button", {
@@ -26,7 +27,8 @@ const Button: React.FC<ButtonProps> = (
         [color]: variant == "outline" && !!color,
         bg: variant == "solid" && color,
         [variant]: !!variant,
-        [colorText]: !!colorText
+        [colorText]: !!colorText,
+        custom: custom,
     });
     bem.Append(className);
     return (

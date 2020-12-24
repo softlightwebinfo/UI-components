@@ -1,3 +1,5 @@
+export const parameters = {layout: 'fullscreen'}
+
 /**
  * Read https://storybook.js.org/docs/react/configure/overview#configure-story-rendering
  * for more information about the purpose of this file.

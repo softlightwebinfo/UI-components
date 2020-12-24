@@ -3,7 +3,7 @@
 
 .Field {
   @include font-defaults;
-  color: $harvey-green;
+  color: $color-white;
 
   & &__hint {
     margin-top: 6px;
@@ -12,6 +12,43 @@
   & &__description {
     margin-bottom: 6px;
     font-size: em(13);
+  }
+
+  & &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    input,
+    textarea {
+      padding-left: $margin-bottom;
+    }
+
+    svg {
+      position: absolute;
+      left: $margin-bottom;
+      color: $color-white;
+    }
+  }
+
+  &--custom {
+    input,
+    textarea {
+      @include TransitionDefault;
+      background-color: hsla(0, 0%, 100%, .1);
+      color: white;
+      padding: em(15) 3em !important;
+      height: auto;
+      border: 0;
+
+      &::placeholder,
+      &::-moz-placeholder,
+      &::-ms-input-placeholder,
+      &::-webkit-input-placeholder {
+        color: white;
+      }
+    }
   }
 
   &--rounded {

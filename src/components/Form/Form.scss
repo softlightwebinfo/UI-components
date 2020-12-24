@@ -1,6 +1,13 @@
 // Generated with util/create-component.js
 @import "src/index";
+
 .Form {
   @include font-defaults;
   color: $harvey-green;
+
+  &--custom {
+    .Field {
+      margin-bottom: $margin-bottom;
+    }
+  }
 }

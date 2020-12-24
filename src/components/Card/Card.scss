@@ -50,4 +50,10 @@
   &--gradient {
     @include Gradient();
   }
+
+  &--transparent {
+    background: transparent;
+    border: 0;
+    @include Shadow(none);
+  }
 }

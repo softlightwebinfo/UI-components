@@ -1,6 +1,6 @@
 {
   "name": "@codeunic/ui-components",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "main": "build/index.js",
   "module": "build/index.esm.js",
   "files": [
@@ -63,6 +63,7 @@
     "@fortawesome/free-regular-svg-icons": "^5.15.1",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@fortawesome/react-fontawesome": "^0.1.13",
+    "moment": "^2.29.1",
     "uuid": "^8.3.1"
   }
 }

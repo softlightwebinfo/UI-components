@@ -5,8 +5,10 @@ import { IObject } from "../../interfaces/IObject";
 export interface FormProps extends IProps {
     id: string;
     noValidate?: boolean;
-
-    onSubmit(obj: IObject): void;
-
-    onChange(id: string, value: any, obj: IObject): void;
+    custom?: boolean;
+    onSubmit: FormPropsOnSubmit;
+    onChange: FormPropsOnChange;
 }
+
+export type FormPropsOnChange = (id: string, value: any, obj: IObject) => void;
+export type FormPropsOnSubmit = (obj: IObject) => void;

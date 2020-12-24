@@ -1,0 +1,10 @@
+{
+  "btnLogin": "Login",
+  "btnCreateAccount": "Create account",
+  "needHelp": "Need help",
+  "name": "Name",
+  "phone": "Phone",
+  "email": "Email",
+  "password": "Password",
+  "youHaveAccount": "You have account"
+}

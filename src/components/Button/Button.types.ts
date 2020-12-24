@@ -14,6 +14,7 @@ export interface ButtonProps extends IProps {
     element?: boolean;
     size?: TSizeHeight;
     hasIcon?: boolean;
+    custom?: boolean;
 
     onClick?(evt: any);
 }

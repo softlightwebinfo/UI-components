@@ -273,7 +273,7 @@ const HomePage: React.FC<HomePageProps> = ({className, style, children}) => {
                     <Col noPadding xs={12} sm={6} md={6} lg={3} xl={3} key={index}>
                         <CardImage
                             key={index}
-                            image={"https://lh3.googleusercontent.com/proxy/vyPaIB-Sh-PpWO9YgaW6ndZfZTp_Pzcxs02VjdoGE9egGooQ1OP5yujz_PPUTeWKfgVEWfRBu83-lgbHPxKOvNpWN4OnMcCOSG7PT36umlJsXcBiPUL1Cw"}
+                            image={"https://cdn2.hubspot.net/hubfs/156214/blog/Que%20es%20un%20banner-1.jpg"}
                             title={`Title ${index}`}
                         />
                     </Col>
@@ -282,7 +282,7 @@ const HomePage: React.FC<HomePageProps> = ({className, style, children}) => {
             <SectionInfoLayout
                 spaceTop
                 backgroundImage={"https://oij.org/wp-content/uploads/2018/03/fondo-Azul-1100x730.png"}
-                image={"https://lh3.googleusercontent.com/proxy/vyPaIB-Sh-PpWO9YgaW6ndZfZTp_Pzcxs02VjdoGE9egGooQ1OP5yujz_PPUTeWKfgVEWfRBu83-lgbHPxKOvNpWN4OnMcCOSG7PT36umlJsXcBiPUL1Cw"}
+                image={"https://cdn2.hubspot.net/hubfs/156214/blog/Que%20es%20un%20banner-1.jpg"}
                 imageTitle={"New Horizons"}
                 list={[
                     {
