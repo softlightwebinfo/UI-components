@@ -40,6 +40,7 @@ const RegisterWidget: React.FC<RegisterWidgetProps> = ({className, style, ...pro
                 id={"form-register"}
             >
                 <TextInputField
+                    id={"name"}
                     placeholder={use.getTranslation("name")}
                     custom
                     rounded
@@ -47,6 +48,7 @@ const RegisterWidget: React.FC<RegisterWidgetProps> = ({className, style, ...pro
                     value={initName}
                 />
                 <TextInputField
+                    id={"phone"}
                     placeholder={use.getTranslation("phone")}
                     custom
                     rounded
@@ -54,6 +56,7 @@ const RegisterWidget: React.FC<RegisterWidgetProps> = ({className, style, ...pro
                     value={initPhone}
                 />
                 <TextInputField
+                    id={"email"}
                     placeholder={use.getTranslation("email")}
                     custom
                     rounded
@@ -61,6 +64,7 @@ const RegisterWidget: React.FC<RegisterWidgetProps> = ({className, style, ...pro
                     value={initEmail}
                 />
                 <PasswordInputField
+                    id={"password"}
                     placeholder={use.getTranslation("password")}
                     custom
                     rounded

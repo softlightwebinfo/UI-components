@@ -37,8 +37,8 @@ const LoginWidget: React.FC<LoginWidgetProps> = ({className, style, ...props}) =
                 onSubmit={onSubmit}
                 id={"form-login"}
             >
-                <TextInputField custom rounded icon={faUser} value={initEmail}/>
-                <PasswordInputField custom rounded icon={faLock} value={initPassword}/>
+                <TextInputField id={"email"} custom rounded icon={faUser} value={initEmail}/>
+                <PasswordInputField custom id={"password"} rounded icon={faLock} value={initPassword}/>
                 <Button custom>{use.getTranslation("btnLogin")}</Button>
                 <Flex className={bem.Children("footer")}>
                     {linkCreateAccountWrapper ? linkCreateAccountWrapper(componentCreateAccount) : componentCreateAccount}
