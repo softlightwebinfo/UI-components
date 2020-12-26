@@ -48,8 +48,8 @@ class Form extends React.Component<FormProps, { data: IObject }> {
             custom: custom,
         });
         bem.Append(className);
-        const onSubmitForm = () => {
-            onSubmit(this.state.data);
+        const onSubmitForm = (evt) => {
+            onSubmit(evt, this.state.data);
         };
         return (
             <FormContext.Provider value={{
