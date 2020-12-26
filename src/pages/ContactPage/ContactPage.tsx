@@ -47,7 +47,7 @@ const ContactPage: React.FC<ContactPageProps> = ({className, style, children, ..
     const use = useGeneralContext();
     const styleMap = {"width": "100%", "height": "60vh"}
     const [position] = useState<any>([37.885963680860755, -4.774589538574219,]);
-
+    const isClient = false;
     return (
         <section
             style={style}
@@ -89,18 +89,19 @@ const ContactPage: React.FC<ContactPageProps> = ({className, style, children, ..
                     </Col>
                 </Row>
             </Section>
-            <MapContainer
-                style={styleMap}
-                center={position}
-                zoom={12}
-            >
-
-                <TileLayer
-                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                    attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
-                />
-                <LocationMarker address={address}/>
-            </MapContainer>
+            {/*{isClient && (*/}
+            {/*    <MapContainer*/}
+            {/*        style={styleMap}*/}
+            {/*        center={position}*/}
+            {/*        zoom={12}*/}
+            {/*    >*/}
+            {/*        <TileLayer*/}
+            {/*            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"*/}
+            {/*            attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"*/}
+            {/*        />*/}
+            {/*        <LocationMarker address={address}/>*/}
+            {/*    </MapContainer>*/}
+            {/*)}*/}
         </section>
     )
 };

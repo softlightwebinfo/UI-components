@@ -56,4 +56,8 @@
     border: 0;
     @include Shadow(none);
   }
+
+  &--border {
+    border-left: 4px solid $color-success;
+  }
 }

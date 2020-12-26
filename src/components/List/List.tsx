@@ -15,6 +15,7 @@ const List: React.FC<ListProps> = (
     bem.Append(className);
     const TagComponent = isOrder ? OrderedList : UnorderedList
     return (
+        // @ts-ignore
         <TagComponent
             {...rest}
             className={bem.toString()}

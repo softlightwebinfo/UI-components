@@ -17,6 +17,7 @@ const Card: React.FC<CardProps> = (
         gradient,
         isTitleLabel,
         transparent,
+        border,
         ...props
     }) => {
         const bem = new BEM("Card", {
@@ -25,6 +26,7 @@ const Card: React.FC<CardProps> = (
             gradient: gradient,
             titleLabel: isTitleLabel,
             transparent: transparent,
+            border: border,
         });
         bem.Append(className);
         return (

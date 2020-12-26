@@ -11,6 +11,7 @@ export interface ContactPageProps extends IProps {
     onChange: FormPropsOnChange;
     onSubmit: FormPropsOnSubmit;
     information: ContactPagePropsInformation[];
+    isClient?: boolean;
 }
 
 export interface ContactPagePropsInformation {

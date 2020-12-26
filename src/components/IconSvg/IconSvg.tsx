@@ -4,9 +4,13 @@ import { IconSvgProps } from "./IconSvg.types";
 import "./IconSvg.scss";
 import { BEM } from "../../libs/BEM";
 import Checklist from "./icons/Checklist";
+import Error404 from "./icons/Error404";
+import Error500 from "./icons/Error500";
 
 const icons = {
     checklist: Checklist,
+    404: Error404,
+    500: Error500,
 };
 
 const IconSvg: React.FC<IconSvgProps> = ({icon, className, style, children}) => {
@@ -14,7 +18,7 @@ const IconSvg: React.FC<IconSvgProps> = ({icon, className, style, children}) => 
     bem.Append(className);
     const Component = icon in icons ? icons[icon] : "span";
     return (
-        <div style={style} className={bem.toString()} data-testid="IconSvg">
+        <div style={style} className={bem.toString()}>
             <Component/>
         </div>
     )

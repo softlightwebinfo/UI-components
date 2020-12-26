@@ -33,5 +33,11 @@
 
   &__footer {
     background-color: hsla(0, 0, 0, 0.06);
+
+    .FooterWidget__list {
+      a {
+        color: white;
+      }
+    }
   }
 }

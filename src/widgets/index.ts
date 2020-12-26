@@ -21,3 +21,5 @@ export { FooterBigWidget }
 export { FooterListWidget }
 export { LoginWidget }
 export { RegisterWidget }
+import CardFinanceWidget from "./CardFinanceWidget/CardFinanceWidget";
+export {CardFinanceWidget}

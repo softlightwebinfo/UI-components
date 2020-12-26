@@ -8,5 +8,10 @@
   "password": "Password",
   "youHaveAccount": "You have account",
   "message": "Message",
-  "contactUs": "Contact Us"
+  "contactUs": "Contact Us",
+  "oops": "Ooops... 404!",
+  "notFound": "The page your requested could not be found",
+  "goToHome": "Back to home",
+  "somethingWentWrong": "Something went wrong!",
+  "serverError": "Server Error 500. Our staff has been notified, thank you for your understanding."
 }

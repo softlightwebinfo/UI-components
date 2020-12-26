@@ -1,0 +1,52 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+
+.DropdownMenu {
+  @include font-defaults;
+  @include Shadow(0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12));
+  background-color: $color-white;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  max-height: calc(100vh - 48px);
+  border-radius: 4px;
+  outline: 0;
+  min-width: 300px;
+  max-width: 400px;
+
+  &__item {
+    @include TransitionDefault;
+    display: flex;
+    color: $color-black;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    line-height: 48px;
+    height: 48px;
+    padding: 0 16px;
+    text-align: left;
+    text-decoration: none;
+    max-width: 100%;
+    position: relative;
+    font-size: 15px;
+    &:hover {
+      background-color: rgba(151, 166, 186, .12);
+      cursor: pointer;
+    }
+
+    &--separator {
+      background-color: gainsboro;
+      height: 1px;
+
+      &:hover {
+        background-color: gainsboro;
+      }
+    }
+
+    svg {
+      margin-right: 10px;
+      width: 18px !important;
+      height: 18px;
+    }
+
+  }
+}

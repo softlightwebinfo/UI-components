@@ -8,5 +8,10 @@
   "password": "Contraseña",
   "youHaveAccount": "Tienes cuenta",
   "message": "Mensaje",
-  "contactUs": "Contactar"
+  "contactUs": "Contactar",
+  "oops": "Lo siento... 404!",
+  "notFound": "No se pudo encontrar la página solicitada",
+  "goToHome": "Volver a la pagina principal",
+  "somethingWentWrong": "¡Algo salió mal!",
+  "serverError": "Error del servidor 500. Nuestro personal ha sido notificado, gracias por su comprensión."
 }
