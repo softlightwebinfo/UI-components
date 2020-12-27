@@ -1,6 +1,6 @@
 {
   "name": "@codeunic/ui-components",
-  "version": "0.8.1-1",
+  "version": "0.8.1-2",
   "main": "build/index.js",
   "module": "build/index.esm.js",
   "files": [
@@ -54,6 +54,7 @@
     "rollup-plugin-copy": "^3.3.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^3.1.8",
+    "rollup-plugin-scss": "^2.6.1",
     "rollup-plugin-typescript2": "^0.29.0",
     "sass-loader": "^10.1.0",
     "ts-jest": "^26.4.4",
