@@ -5,6 +5,6 @@ import { IconProp } from "@fortawesome/fontawesome-svg-core";
 export interface InfoProps extends IProps {
     icon: IconProp;
     title: string;
-    description: string;
+    description: string | string[];
     horizontal?: boolean;
 }

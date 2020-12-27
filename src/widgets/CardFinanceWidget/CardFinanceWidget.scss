@@ -1,0 +1,50 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+
+.CardFinanceWidget {
+  @include font-defaults;
+  color: $harvey-blue;
+  overflow: initial;
+
+  &__icon {
+    position: absolute;
+    right: 0;
+    margin: -2.5rem;
+    opacity: .08;
+
+    svg {
+      height: 6em !important;
+      width: 6em !important;
+    }
+  }
+
+  &__list {
+    margin-top: 1.2rem;
+    margin-right: 2.5rem;
+
+    .Badge {
+      color: gray;
+      margin: 0;
+      padding: 0;
+      font-size: 0.7em;
+    }
+
+    .Typography {
+      color: $color-black;
+    }
+  }
+
+  &__title {
+    color: gray;
+    margin-bottom: 0.2em;
+  }
+
+  &__content {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+  }
+  &__top{
+    padding: 20px 20px 0;
+  }
+}

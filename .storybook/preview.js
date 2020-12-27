@@ -1,4 +1,13 @@
-export const parameters = {layout: 'fullscreen'}
+export const parameters = {
+    layout: 'fullscreen',
+    html: {
+        prettier: {
+            tabWidth: 4,
+            useTabs: false,
+            htmlWhitespaceSensitivity: 'strict',
+        },
+    },
+}
 
 /**
  * Read https://storybook.js.org/docs/react/configure/overview#configure-story-rendering

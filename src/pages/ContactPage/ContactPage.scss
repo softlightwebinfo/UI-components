@@ -1,0 +1,21 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+
+.ContactPage {
+  @include font-defaults;
+  color: $harvey-green;
+
+  .Info {
+    &__icon {
+      color: $color-info
+    }
+
+    &__title {
+      color: black;
+    }
+
+    &__description {
+      color: gray;
+    }
+  }
+}

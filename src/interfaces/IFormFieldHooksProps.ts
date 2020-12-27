@@ -12,5 +12,6 @@ export interface IFormFieldHooksPropsResponse {
 
     setterStore(value?: string);
 
+    value: string;
     use: IFormContextState;
 }

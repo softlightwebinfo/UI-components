@@ -1,0 +1,28 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+
+.Blog {
+  @include font-defaults;
+
+  &__circle {
+    position: absolute;
+    display: flex;
+    left: 0;
+    right: 0;
+    margin: -40px auto auto;
+    border: 1px solid gainsboro;
+  }
+
+  &__content {
+    text-align: center;
+    padding: 80px 40px 40px;
+  }
+
+  &__image {
+    height: 300px;
+  }
+
+  &__title {
+    margin-bottom: $margin-bottom;
+  }
+}

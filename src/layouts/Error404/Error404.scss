@@ -1,0 +1,26 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+
+.Error404 {
+  @include font-defaults;
+
+  > .Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .Typography {
+      color: $color-black;
+    }
+  }
+
+  &__title {
+    margin-top: em(60);
+    margin-bottom: em(10);
+  }
+
+  &__subTitle {
+    margin-bottom: em(60);
+  }
+}

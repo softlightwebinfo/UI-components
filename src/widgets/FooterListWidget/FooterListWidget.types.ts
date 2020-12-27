@@ -14,5 +14,5 @@ export interface FooterListWidgetProps extends IProps {
 
 export interface FooterListWidgetPropsLink {
     title: string;
-    links: string[];
+    links: any[];
 }

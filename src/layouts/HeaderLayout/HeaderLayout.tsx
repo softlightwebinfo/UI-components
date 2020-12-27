@@ -23,4 +23,5 @@ const HeaderLayout: React.FC<HeaderLayoutProps> = (
         </div>
     )
 };
+
 export default HeaderLayout;

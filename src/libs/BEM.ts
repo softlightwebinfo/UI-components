@@ -18,6 +18,10 @@ export class BEM {
         this._listClassNames.push(parent)
     }
 
+    public GetParent(): string {
+        return this._parent;
+    }
+
     toString(): string {
         return Object.entries(this._classNames).reduce((previousValue, currentValue) => {
             if (currentValue[1]) {

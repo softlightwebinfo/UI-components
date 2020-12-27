@@ -1,0 +1,62 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+
+.Notification {
+  $then: &;
+  @include font-defaults;
+  color: $harvey-blue;
+  max-width: em(480);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+
+  &__description {
+    color: black;
+  }
+
+  &__icon {
+    flex: 0;
+    width: 1.4em!important;
+    height: 1.4em;
+    margin-right: $margin-bottom;
+  }
+
+  &__message {
+    flex: 1;
+  }
+
+  &__title {
+    #{$then}--error & {
+      color: $color-danger;
+    }
+
+    #{$then}--success & {
+      color: $color-success;
+    }
+
+    #{$then}--info & {
+      color: $color-primary;
+    }
+
+    #{$then}--warning & {
+      color: $color-warning;
+    }
+  }
+
+  &--error {
+    border-left-color: $color-danger;
+  }
+
+  &--warning {
+    border-left-color: $color-warning;
+  }
+
+  &--info {
+    border-left-color: $color-primary;
+  }
+
+  &--success {
+    border-left-color: $color-success;
+  }
+}

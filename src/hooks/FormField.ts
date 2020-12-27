@@ -1,4 +1,4 @@
-import { useFormContext } from "../context/formContext";
+import { useFormContext } from "../context";
 import { useEffect } from "react";
 import { IFormFieldHooksProps, IFormFieldHooksPropsResponse } from "../interfaces/IFormFieldHooksProps";
 
@@ -16,6 +16,8 @@ export const formFieldHooks = (props: IFormFieldHooksProps): IFormFieldHooksProp
         setterStore(evt.target.value);
     };
 
+    const value = props.id in use.data ? use.data[props.id] : props.value;
+
     useEffect(() => {
         setterStore();
     }, [])
@@ -23,6 +25,7 @@ export const formFieldHooks = (props: IFormFieldHooksProps): IFormFieldHooksProp
     return {
         onChange,
         use,
+        value,
         setterStore,
     }
 }

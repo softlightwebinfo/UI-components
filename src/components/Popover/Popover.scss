@@ -19,6 +19,8 @@
     overflow: hidden;
     @include TransitionDefault;
     max-height: 400px;
+    width: fit-content;
+    z-index: 3;
   }
 
   &__close {

@@ -11,4 +11,4 @@ export interface FormProps extends IProps {
 }
 
 export type FormPropsOnChange = (id: string, value: any, obj: IObject) => void;
-export type FormPropsOnSubmit = (obj: IObject) => void;
+export type FormPropsOnSubmit = (evt: any, obj: IObject) => void;

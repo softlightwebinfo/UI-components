@@ -4,5 +4,6 @@ import { IRows } from "../../interfaces/IRows";
 import { IListProps } from "../../interfaces/IListProps";
 
 export interface UnorderedListProps extends IProps, IListProps {
-    rows?: IRows<string>[]
+    rows?: IRows<string>[],
+    children: any[] | any;
 }
