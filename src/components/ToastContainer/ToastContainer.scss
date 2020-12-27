@@ -1,0 +1,9 @@
+// Generated with util/create-component.js
+@import "../../index.scss";
+.ToastContainer {
+  @include font-defaults;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  @include TransitionDefault;
+}

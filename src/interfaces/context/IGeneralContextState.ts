@@ -1,10 +1,16 @@
 import { IObjectString } from "../IObject";
+import { ToastProps } from "../../components/Toast/Toast.types";
 
 export interface IGeneralContextState {
-    translations?: ITranslation;
-    currentLang?: string;
+    translations: ITranslation;
+    currentLang: string;
+    notifications: ToastProps[];
 
-    getTranslation?(key: string): string;
+    dismissNotification(index: number): void;
+
+    sendNotification(prop: ToastProps): void;
+
+    getTranslation(key: string): string;
 }
 
 export interface ITranslation {

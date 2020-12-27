@@ -9,12 +9,12 @@ import { Field } from "../index";
 const PasswordInputField: React.FC<PasswordInputFieldProps> = ({className, style, ...props}) => {
     const bem = new BEM("PasswordInputField", {});
     bem.Append(className);
-    const {onChange} = formFieldHooks({id: props.id, onChange: props.onChange, value: props.value});
+    const {onChange, value} = formFieldHooks({id: props.id, onChange: props.onChange, value: props.value});
     return (
         <Field {...props} className={bem.toString()}>
             <input
                 type="password"
-                value={props.value}
+                value={value}
                 placeholder={props.placeholder}
                 required={props.required}
                 id={props.id}

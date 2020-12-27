@@ -2,33 +2,49 @@
 import React from "react";
 import { ContextProviderProps } from "./ContextProvider.types";
 import "./ContextProvider.scss";
-import { BEM } from "../../libs/BEM";
-import { GeneralContext } from "../../context/generalContext";
+import { GeneralContext } from "../../context";
 import { getTranslations } from "../../functions/getTranslations";
 import { deepmerge } from "../../functions/merge";
+import { ToastContainer } from "../index";
+import { IGeneralContextState } from "../../interfaces/context/IGeneralContextState";
+import { ToastProps } from "../Toast/Toast.types";
 
-const ContextProvider: React.FC<ContextProviderProps> = ({className, children, ...props}) => {
-    const {
-        translations,
-        lang = "en",
-    } = props;
-    const bem = new BEM("ContextProvider", {});
-    bem.Append(className);
-    const store = {
-        currentLang: lang,
+class ContextProvider extends React.Component<ContextProviderProps, IGeneralContextState> {
+    public state = {
+        currentLang: this.props.lang || "es",
+        notifications: this.props.notifications || [],
+        dismissNotification: (index: number) => {
+            this.setState(e => ({
+                notifications: e.notifications.filter((_, indexR) => indexR != index),
+            }))
+        },
+        sendNotification: (prop: ToastProps) => {
+            this.setState(e => ({
+                notifications: [prop, ...e.notifications],
+            }));
+        },
         getTranslation(key: string) {
             if (this.currentLang in this.translations && key in this.translations[this.currentLang]) {
                 return this.translations[this.currentLang][key];
             }
             return key;
         },
-        translations: deepmerge(getTranslations(), translations),
+        translations: deepmerge(getTranslations(), this.props.translations),
     };
 
-    return (
-        <GeneralContext.Provider value={store}>
-            {children}
-        </GeneralContext.Provider>
-    )
-};
+    constructor(props) {
+        super(props);
+    }
+
+    render() {
+        let {children} = this.props;
+        return (
+            <GeneralContext.Provider value={this.state}>
+                {children}
+                <ToastContainer/>
+            </GeneralContext.Provider>
+        )
+    }
+}
+
 export default ContextProvider;

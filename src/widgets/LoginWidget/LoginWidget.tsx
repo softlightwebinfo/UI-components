@@ -5,7 +5,7 @@ import "./LoginWidget.scss";
 import { BEM } from "../../libs/BEM";
 import { Button, Card, Flex, Form, Image, PasswordInputField, TextInputField } from "../../components";
 import { faLock, faUser } from "@fortawesome/free-solid-svg-icons";
-import { useGeneralContext } from "../../context/generalContext";
+import { useGeneralContext } from "../../context";
 
 const LoginWidget: React.FC<LoginWidgetProps> = ({className, style, ...props}) => {
     const {
@@ -21,7 +21,6 @@ const LoginWidget: React.FC<LoginWidgetProps> = ({className, style, ...props}) =
     const bem = new BEM("LoginWidget", {});
     bem.Append(className);
     const use = useGeneralContext();
-
     const componentCreateAccount = <span>{use.getTranslation("btnCreateAccount")}</span>;
     const componentNeedHelp = <span>{use.getTranslation("needHelp")}?</span>
     return (
@@ -37,8 +36,22 @@ const LoginWidget: React.FC<LoginWidgetProps> = ({className, style, ...props}) =
                 onSubmit={onSubmit}
                 id={"form-login"}
             >
-                <TextInputField id={"email"} custom rounded icon={faUser} value={initEmail}/>
-                <PasswordInputField custom id={"password"} rounded icon={faLock} value={initPassword}/>
+                <TextInputField
+                    placeholder={use.getTranslation("email")}
+                    id={"email"}
+                    custom
+                    rounded
+                    icon={faUser}
+                    value={initEmail}
+                />
+                <PasswordInputField
+                    placeholder={use.getTranslation("password")}
+                    custom
+                    id={"password"}
+                    rounded
+                    icon={faLock}
+                    value={initPassword}
+                />
                 <Button custom>{use.getTranslation("btnLogin")}</Button>
                 <Flex className={bem.Children("footer")}>
                     {linkCreateAccountWrapper ? linkCreateAccountWrapper(componentCreateAccount) : componentCreateAccount}
