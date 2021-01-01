@@ -1,8 +1,9 @@
 {
   "name": "@codeunic/ui-components",
-  "version": "0.8.3",
+  "version": "0.8.3-2",
   "main": "build/index.js",
   "module": "build/index.esm.js",
+  "es": "build/index.es.js",
   "files": [
     "build"
   ],
@@ -51,6 +52,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "rollup": "^2.34.0",
+    "rollup-plugin-babel-minify": "^10.0.0",
     "rollup-plugin-copy": "^3.3.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^3.1.8",
@@ -70,6 +72,7 @@
     "leaflet": "^1.7.1",
     "moment": "^2.29.1",
     "react-leaflet": "^3.0.5",
+    "rollup-plugin-node-resolve": "^5.2.0",
     "uuid": "^8.3.1"
   }
 }
