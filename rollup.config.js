@@ -5,6 +5,7 @@ import json from "@rollup/plugin-json";
 import typescript from "rollup-plugin-typescript2";
 import postcss from "rollup-plugin-postcss";
 import copy from "rollup-plugin-copy";
+import scss from 'rollup-plugin-scss'
 
 const packageJson = require("./package.json");
 
@@ -30,6 +31,9 @@ export default {
         json(),
         postcss({
             extract: true,
+        }),
+        scss({
+            prefix: `@import "../../index.scss";`,
         }),
         copy({
             targets: [

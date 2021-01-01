@@ -28,10 +28,11 @@ const Menu: React.FC<MenuProps> = (
             className={bem.toString()}
         >
             {Object.entries(menu).map(([key, value], index) => {
+                const component = value.wrapper ? value.wrapper(value.label) : value.label;
                 return (
                     <li key={key} className={bem.Modifier("item", "active", split.includes(key))}>
                         <span onClick={() => onClick && onClick(key, value, index)}>
-                            {value.label}
+                            {component}
                             {value.menu && (<FontAwesomeIcon icon={faChevronDown}/>)}
                         </span>
                         {value.menu && <Menu onClick={onClick} routeKey={key} active={active} menu={value.menu}/>}
