@@ -1,9 +1,10 @@
 {
   "name": "@codeunic/ui-components",
-  "version": "0.8.3-2",
+  "version": "0.8.3-3",
   "main": "build/index.js",
   "module": "build/index.esm.js",
   "es": "build/index.es.js",
+  "umd": "build/index.umd.js",
   "files": [
     "build"
   ],
