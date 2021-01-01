@@ -16,6 +16,8 @@ export interface MenuPropsMenu {
 }
 
 export interface MenuPropsMenuItem {
+    wrapper?(label: string | ReactElement): ReactElement;
+
     label: string | ReactElement;
     menu?: MenuPropsMenu;
 }

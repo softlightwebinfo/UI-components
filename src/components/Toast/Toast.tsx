@@ -24,6 +24,7 @@ const Toast: React.FC<ToastProps> = ({className, style, ...props}) => {
     return (
         <Notification
             {...props}
+            className={bem.toString()}
             onDismiss={onDismiss}
         />
     )

@@ -3,4 +3,5 @@
 
 .Toast {
   @include font-defaults;
+  min-width: em(300);
 }
