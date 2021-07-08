@@ -14,4 +14,6 @@ export interface CardProps extends IProps {
     border?: boolean;
     transparent?: boolean;
     multipleBody?: ReactElement[];
+
+    onClick?(evt: any);
 }

@@ -1,6 +1,7 @@
 // Generated with util/create-component.js
 import { IProps } from "../../interfaces/IProps";
 import { ReactElement } from "react";
+import { ILink } from "../../interfaces/ILink";
 
 export interface FooterListWidgetProps extends IProps {
     titleLeft: string;
@@ -9,10 +10,10 @@ export interface FooterListWidgetProps extends IProps {
     descriptionRight: string;
     links: FooterListWidgetPropsLink[];
 
-    linkWrapper?(component: ReactElement, rowLabel: string);
+    linkWrapper?(component: ReactElement, rowLabel: ILink);
 }
 
 export interface FooterListWidgetPropsLink {
     title: string;
-    links: any[];
+    links: ILink[];
 }

@@ -44,7 +44,7 @@ const FooterListWidget: React.FC<FooterListWidgetProps> = ({className, style, ..
                                 <FooterListTitle title={value.title} bem={bem}/>
                                 <>
                                     {value.links.map((link, index) => {
-                                        const component = <div>{link}</div>
+                                        const component = <div>{link.label}</div>
                                         return (
                                             <Typography key={index} variant={"caption"}>
                                                 {linkWrapper ? linkWrapper(component, link) : component}

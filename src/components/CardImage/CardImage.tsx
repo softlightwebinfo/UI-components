@@ -8,12 +8,14 @@ import { Card, Image } from "../index";
 const CardImage: React.FC<CardImageProps> = ({className, style, children, ...props}) => {
     const {
         image,
-        title
+        title,
+        onClick
     } = props;
     const bem = new BEM("CardImage", {});
     bem.Append(className);
     return (
         <Card
+            onClick={onClick}
             style={style}
             className={bem.toString()}
         >

@@ -67,6 +67,10 @@
     padding-right: $margin-bottom;
     padding-left: $margin-bottom;
     margin-bottom: $margin-bottom * 2;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   &__clamps {

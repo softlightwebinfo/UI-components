@@ -4,4 +4,6 @@ import { IProps } from "../../interfaces/IProps";
 export interface CardImageProps extends IProps {
     image: string;
     title: string;
+
+    onClick?(evt: any);
 }

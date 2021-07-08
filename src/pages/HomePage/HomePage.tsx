@@ -309,9 +309,27 @@ const HomePage: React.FC<HomePageProps> = ({className, style, children}) => {
                     titleRight: "Subscribe to newsletter",
                     descriptionRight: "Probably the best UI Kit in the world! We know you've been waiting for it, so don't be shy!",
                     links: [
-                        {title: "About", links: ["Blog", "About us", "Presentation", "Contact us"]},
-                        {title: "Menu", links: ["Home", "Articles", "Login", "Create account"]},
-                        {title: "Legal", links: ["FAQ", "Terms & Conditions", "Licences", "Cookies"]},
+                        {
+                            title: "About", links: [
+                                {label: "Blog", route: "blog"},
+                                {label: "About us", route: "aboutUs"},
+                                {label: "Contact us", route: "contact"}
+                            ]
+                        },
+                        {
+                            title: "Menu", links: [
+                                {label: "Blog", route: "blog"},
+                                {label: "About us", route: "aboutUs"},
+                                {label: "Contact us", route: "contact"}
+                            ]
+                        },
+                        {
+                            title: "Legal", links: [
+                                {label: "Blog", route: "blog"},
+                                {label: "About us", route: "aboutUs"},
+                                {label: "Contact us", route: "contact"}
+                            ]
+                        },
                     ],
                 }}
                 bottom={{

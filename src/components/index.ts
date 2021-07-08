@@ -197,3 +197,5 @@ import Toast from "./Toast/Toast";
 export {Toast}
 import ToastContainer from "./ToastContainer/ToastContainer";
 export {ToastContainer}
+import HeaderImage from "./HeaderImage/HeaderImage";
+export {HeaderImage}

@@ -18,6 +18,7 @@ const Card: React.FC<CardProps> = (
         isTitleLabel,
         transparent,
         border,
+        onClick,
         ...props
     }) => {
         const bem = new BEM("Card", {
@@ -31,6 +32,7 @@ const Card: React.FC<CardProps> = (
         bem.Append(className);
         return (
             <article
+                onClick={onClick}
                 style={style}
                 className={bem.toString()}
             >
